@@ -1,7 +1,17 @@
 
 import {
   maleSlavicNames,
- orkishNames
+  orkishNames,
+  maleLatinNames,
+  maleRussianNames,
+  maleGaelicNames,
+  WHFMaleHumanNames,
+  wizardsAndClerics,
+  warriorsAndThieves,
+  fantasticCreatures,
+  humanoids,
+  feminineElfNames,
+  masculineElfNames
 
 
 } from "./names.js";
@@ -43,17 +53,20 @@ function updateSecondarySelectStatus() {
       option.value = displayedName;
       secondaryPicker.appendChild(option);
     }
-    //formContainer.insertBefore(secondaryPicker, nameDisplay)
+
     selectColumn.appendChild(secondaryPicker);
     secondaryPicker.classList.add("input");
-    ///
+    
     secondaryPicker.classList.add("form-select");
-    ///
-
-
-    //add names here
+    
     addOption("Losowe");
-    addOption("Orcze");
+    namesAndCategories.forEach((n)=>{ 
+      if (n.name){
+        addOption(n.name)
+      }
+    })
+
+    // addOption("Orcze");
     secondaryPicker.addEventListener("click", () => {
       updateSecondaryPicked();
     });
@@ -114,7 +127,6 @@ function displayArray(ar, parent) {
 }
 
 function pickFromList(pickedList) {
-  console.log(pickedList)
   if (pickedList.type === "mixerSpaced") {
     const nonTypeKeys = Object.keys(pickedList).filter((key) => {
       return key !== "type";
@@ -141,22 +153,28 @@ function pickFromList(pickedList) {
   }
 }
 
-let names = [//add names here
-  maleSlavicNames,
-  orkishNames
+let namesAndCategories = [//add names here
+  {list: wizardsAndClerics, name: "Czarodzieje i Klerycy (DCC)"},
+  {list: masculineElfNames, name: "Elfie - męskie"},
+  {list: feminineElfNames, name: "Elfie - żeńskie"},
+  {list: fantasticCreatures, name: "Fantastyczne Istoty (DCC)"},
+  {list: humanoids, name: "Humanoidzi (DCC)"},
+  {list: orkishNames, name: "Orcze"},
+  {list: maleSlavicNames, name: "Swardońskie - męskie"},
+  {list: WHFMaleHumanNames, name: "Ulmickie - męskie"},
+  {list: warriorsAndThieves, name: "Wojownicy i Złodzieje (DCC)"},
+  {list: maleLatinNames},
+  {list: maleRussianNames},
+  {list: maleGaelicNames},
+
 ]
 
-function createName (){//add names here
-  let chosenNameType = secondaryPicked ? secondaryPicked: "Losowe";
-  if (chosenNameType === "Orcze") {
-    chosenNameType = orkishNames
-  } else if (chosenNameType === "Losowe") {
-    chosenNameType = randomizeFromArray(names);
-  } else {
-    chosenNameType = randomizeFromArray(names);
-  }
+function createName(){
+  let chosenNameType = namesAndCategories.find((element)=>{
+    return element.name == secondaryPicked
+  })
 
-  return pickFromList(chosenNameType)
+  return pickFromList(chosenNameType ? chosenNameType.list : randomizeFromArray(namesAndCategories).list)
 }
 
 const generatedName = function () {
