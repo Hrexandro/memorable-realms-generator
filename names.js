@@ -1,3 +1,39 @@
+function randomizeFromArray(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+////////////////////////////////////////////////////////////////////////////////////copied instead of exporting
+function pickFromList(pickedList) {
+  if (pickedList.type === "mixerSpaced") {
+    const nonTypeKeys = Object.keys(pickedList).filter((key) => {
+      return key !== "type";
+    });
+    let combinedParts = "";
+    for (let k = 0; k < nonTypeKeys.length; k++) {
+      combinedParts += ` ${randomizeFromArray(pickedList[nonTypeKeys[k]])}`;
+    }
+    return combinedParts;
+  } else if (pickedList.type === "mixerConcatenated") {
+    const nonTypeKeys = Object.keys(pickedList).filter((key) => {
+      return key !== "type";
+    });
+    let combinedParts = "";
+    for (let k = 0; k < nonTypeKeys.length; k++) {
+      combinedParts += randomizeFromArray(pickedList[nonTypeKeys[k]]);
+    }
+    return combinedParts;
+  } else if (pickedList.type === "picker") {
+    return randomizeFromArray(pickedList.list);
+  } else if (pickedList().type === "pickerRoller") {
+    // pickerRollers (e.g. random encounters, corpse loot) are functions, so that the numbers are rerolled each time
+    return randomizeFromArray(pickedList().list);
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////copied instead of exporting
+
+
+
+
 export const orkishNames = {
   type: "mixerConcatenated",
   prefix: [
@@ -1774,7 +1810,7 @@ export const maleGaelicNames = {
     "Daire",
     "Déaglán",
     "Deaglán",
-    "Deasmhumhnach",
+    // "Deasmhumhnach",
     "Diarmaid",
     "Diarmuid",
     "Diarmait",
@@ -2452,6 +2488,16 @@ export const masculineElfNames = {
     "Tuor",
     "Voronwë"
   ]
+}
+
+export const humanMasculineNames = function (){
+  let list = []
+  list.push(pickFromList(maleSlavicNames))
+  list.push(pickFromList(WHFMaleHumanNames))
+  return {
+    type: "pickerRoller",
+    list
+  }
 }
 
 // export const something = {
