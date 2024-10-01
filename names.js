@@ -2440,7 +2440,8 @@ export const masculineElfNames = {
     "Finarfin",
     "Fingolfin",
     "Fingon",
-    "Finrod Felagund",
+    "Finrod",
+    "Felagund",
     "Finwë",
     "Galadhon",
     "Galathil",
@@ -2480,7 +2481,8 @@ export const masculineElfNames = {
     "Haldir",
     "Pengolodh",
     "Penlod",
-    "Quennar i Onótimo",
+    "Quennar",
+    "Onótimo",
     "Tirion",
     "Saeros",
     "Salgant",
@@ -2490,10 +2492,118 @@ export const masculineElfNames = {
   ]
 }
 
+export const masculineTharkianNames = {
+  type: "picker",
+  list: [  "Azrik", "Hamilkar", "Balhan", "Zarqon", "Meskalon", "Jadhem", "Safir", "Hasdrubal", "Motep", "Serpin", 
+  "Belashar", "Malqar", "Kamon", "Hannib", "Sabrak", "Tukar", "Barakesh", "Malzim", "Tibun", "Korabel", 
+  "Zimran", "Selkar", "Uthil", "Ashkar", "Baalher", "Ezraq", "Zibran", "Adzubar", "Hirbal", "Lokmen", 
+  "Murdan", "Ashbel", "Zartan", "Samirak", "Nabtel", "Fezzir", "Mastan", "Irdan", "Hamirak", "Gelash", 
+  "Salnur", "Tamarik", "Iraman", "Tarkun", "Mozar", "Adzhel", "Samblar", "Sherifon", "Moltan", "Kurban", 
+  "Astamar", "Bedrun", "Irsheb", "Jendrik", "Luthar", "Dakim", "Hirkal", "Neberan", "Farzal", "Nashim", 
+  "Baratun", "Koshir", "Abilar", "Tarik", "Kelmar", "Zumdal", "Althir", "Fenrak", "Mishen", "Arganis", 
+  "Karmil", "Yazkan", "Bashan", "Albelzar", "Zinar", "Sharak", "Durmun", "Ansafir", "Hirzan", "Balzim", 
+  "Karfash", "Temlek", "Ebzir", "Ustak", "Bathem", "Izmur", "Kirban", "Sorban", "Bendar", "Jamiron", 
+  "Thaldrin", "Muhtesim", "Zahlek", "Ralikar", "Kadim", "Fenur", "Hadran", "Istal", "Sarman", "Tahlem", 
+  "Ulanzer", "Bazil", "Abrik", "Urzak", "Lekhem", "Vurhal", "Galbem", "Berash", "Iktar", "Esron", 
+  "Jendil", "Zimtar", "Orfash", "Mishrak", "Hafnir", "Kamshal", "Harbith", "Mirzan", "Nuzhal", "Benur", 
+  "Sidkar", "Balhon", "Idran", "Labanek", "Karimel", "Zakbel", "Hemazil", "Atram", "Elzefir", "Jubar", 
+  "Kazmek", "Beklem", "Athar", "Sabrun", "Hashek", "Omlek", "Hazbel", "Turalis", "Mahtar", "Ulanash", 
+  "Zebbar", "Nizan", "Ferzar", "Nusrak", "Iblar", "Haslem", "Talanth", "Jukbel", "Rezmik", "Parzan", 
+  "Kurmesh", "Bellar", "Nimrodak", "Uzhel", "Talzir", "Mirkel", "Abranis", "Osfar", "Selinur", "Zaybak", 
+  "Malten", "Kirzar", "Ruhel", "Shamelar", "Jasrak", "Thalben", "Zurkan", "Mabrik", "Altharen", "Nemlek", 
+  "Oshan", "Idenar", "Zebril", "Hirzan", "Lumeron", "Ebarnis", "Vultar", "Sarunel", "Idiran", "Harzel", 
+  "Thasrik", "Herbenar", "Zurbal", "Altimir", "Varsal", "Malikesh", "Barenik", "Darbel", "Reshtan", 
+  "Lorbin", "Inzar", "Hamzadir", "Nabtis", "Sebmar", "Tulqar", "Ashzafir", "Mashrik", "Vesdar", "Zoramun", 
+  "Krantar",
+
+  "Sierhelt", "Meldrim", "Valtheris", "Israkel", "Tharim", "Zahelt", "Haldrin", "Seldrak", "Jaltrim", "Fendril", 
+  "Hesrim", "Tazhelm", "Kaldris", "Zahran", "Ulthir", "Veltrim", "Bralmir", "Selrin", "Zelkor", "Varhim", 
+  "Kashel", "Nardrim", "Mirzal", "Ithrel", "Fazrim", "Zeldar", "Azheron", "Beltrim", "Sarnil", "Elgrim", 
+  "Malrik", "Festrim", "Dalreth", "Sadril", "Zimreth", "Harhelm", "Nethrim", "Kelrim", "Jathar", "Raldris", 
+  "Karhelm", "Nothrim", "Beril", "Valzir", "Zelthir", "Serhil", "Tarmel", "Garmith", "Ulzir", "Vezrim", 
+  "Samhelt", "Halith", "Mithral", "Tamelor", "Felrim", "Kardrim", "Zelmir", "Jorhil", "Selrik", "Zelthor", 
+  "Tharhil", "Melthar", "Azrim", "Feldrin", "Ulthor", "Tarhek", "Seldrik", "Kelthor", "Vernith", "Jadrim", 
+  "Iraldrin", "Barzil", "Serdrin", "Kalthir", "Harzin", "Fedrim", "Selorin", "Tarhel", "Zorhil", "Athrim", 
+  "Jarlith", "Thernor", "Velzir", "Zethar", "Karhil", "Seldor", "Irdrel", "Hathrin", "Valhelm", "Kasrim", 
+  "Zarhil", "Fenrim", "Tazril", "Harsin", "Vornith", "Seldrim", "Nadril", "Felhin", "Jezrim", "Ralzir", 
+  "Balthir", "Zelrim", "Samthor", "Tarhim", "Varhil", "Seltrim", "Farnil", "Haldreth", "Jelthir", "Karnil", 
+  "Zorhelm", "Beldrin", "Tarneth", "Ralhim", "Kazrim", "Selgrim", "Barmil", "Varnith", "Jorhelm", "Tharnil", 
+  "Harnil", "Kalrim", "Selzor", "Velthar", "Zarhelm", "Barhelm", "Hestrim", "Jalthor", "Veldrin", "Jorhim", 
+  "Keltar", "Jorhil", "Harnor", "Selthor", "Tarlim", "Marthir", "Nalthor", "Serhim", "Farhil", "Belhar", 
+  "Ralhelm", "Tarzil", "Harnel", "Velthor", "Zeltar", "Maldrim", "Karzin", "Nerhil", "Serthor", "Tormith", 
+  "Velzir", "Jorthar", "Kazrel", "Halzin", "Farnor", "Jelzor", "Tharnor", "Velgrim", "Samhelm", "Marhim", 
+  "Kazrim", "Balthar", "Jolhim", "Kelzrin", "Falthor", "Varnor", "Zelzor", "Jarneth", "Kelgrim", "Rothar", 
+  "Thalgrim", "Harzor", "Selrik", "Felthor", "Ithrin", "Garneth", "Belhelm", "Melhar", "Tharnil", "Veldrim", 
+  "Thargrim", "Sarnor", "Varzor", "Jelthar", "Nalthor", "Kazril", "Farneth", "Jarnor", "Tornil", "Kalzrin", 
+  
+  "Serdrim", "Varnel", "Thalrim", "Zornil", "Karthor", "Tazhel", "Jornil",
+  "Bongo", "Skrungus", "Grombo", "Bunkulon", "Dargalo", "Kalimak", "Piom", 
+  "Murbag", "Alakryt", "Rugow", "Raczak", "Usztor", "Czilimtar", "Lewizjon", 
+  "Kambetar", "Agim", "Tropos", "Drenik", "Torlak", "Doskozil"]
+}
+
+export const feminineTharkianNames = {
+  type: "picker",
+  list: [  "Anzira", "Zilara", "Hathra", "Belit", "Naris", "Selmara", "Mardis", "Orzani", "Shabira", "Zephira", 
+  "Althis", "Ilzira", "Hafra", "Nuzira", "Kazira", "Mirzel", "Samrah", "Izdani", "Elnaris", "Bahira", 
+  "Asmaris", "Melthia", "Jalith", "Raniah", "Yazira", "Halira", "Zekira", "Arfah", "Lamira", "Izhtir", 
+  "Qalith", "Munaqir", "Thalira", "Zantara", "Azenis", "Thamira", "Tamzara", "Nemira", "Ashira", "Samina", 
+  "Gelthara", "Narzira", "Elkaris", "Ishtira", "Mazira", "Barizah", "Jandira", "Kahlith", "Olthira", 
+  "Zedaria", "Malzira", "Azthira", "Belzira", "Tarnith", "Usira", "Jamira", "Lemna", "Risla", "Namtira", 
+  "Kalizah", "Idrania", "Zithara", "Yariza", "Elamira", "Darina", "Mirzim", "Lathira", "Iqra", "Kasira", 
+  "Jasmira", "Zafrina", "Ulzira", "Tarina", "Yezla", "Varitha", "Shemara", "Illara", "Bethira", "Hazirah", 
+  "Jasira", "Amthira", "Lenira", "Zulnari", "Ferzah", "Kalmina", "Sharith", "Anamara", "Mezira", "Kirith", 
+  "Baramith", "Alzira", "Ebthara", "Lemara", "Samthia", "Zehran", "Mirathra", "Ramila", "Khizra", 
+  "Jalzira", "Fathara", "Ishnah", "Dirahna", "Ralzira", "Zabira", "Ermina", "Zebaris", "Abina", "Vezrah", 
+  "Nathira", "Hizria", "Samarin", "Milzia", "Barinith", "Fethara", "Lazira", "Tarisa", "Yalmira", "Venara", 
+  "Lorathra", "Zenithra", "Dazira", "Ulmira", "Salthara", "Jazira", "Zibriah", "Tazina", "Yalmira", 
+  "Kamirath", "Benira", "Idirah", "Belnara", "Zofira", "Lizarah", "Arfara", "Selrina", "Mithara", "Varnira", 
+  "Amandria", "Jamilith", "Nahlara", "Jasma", "Belzithra", "Lethira", "Selzana", "Ralmira", "Demraza", 
+  "Usmina", "Miralia", "Thimira", "Sirithra", "Ormira", "Yalmara", "Ulanira", "Basira", "Zulnazah", 
+  "Idhirah", "Abarina", "Lamira", "Zeltira", "Kalzira", "Izimara", "Barzilrah", "Shenira", "Zamira", 
+  "Ezirah", "Kamna", "Ferzira", "Valira", "Melkira", "Ismahra", "Zamila", "Tabitha", "Masirah", "Harmira", 
+  "Lusmira", "Zelimara", "Yustira", "Azenirah", "Balira", "Temira", "Yalfira", "Zebrina", "Kafira", 
+  "Zuzlah", "Samara", "Mirzara", "Zorana", "Thamira", "Selbeth", "Halnira", "Ulzira", "Malfira", "Orimira", 
+  "Ramira", "Shadira", "Izlina", "Azkarah", "Abela", "Ferzari", "Nasira",
+
+  "Sierha", "Meldra", "Thalira", "Valthra", "Zarhina", "Selrinia", "Tazira", "Jelra", "Kalina", "Narzira", 
+  "Israina", "Heldria", "Fenlira", "Velzira", "Salmira", "Belthira", "Azhera", "Zeldra", "Tarnira", "Karina", 
+  "Selina", "Ulthira", "Hathira", "Valzira", "Azrina", "Nethira", "Melthira", "Zarlira", "Belrina", "Serhina", 
+  "Kalzira", "Varina", "Nathira", "Zamira", "Heslira", "Felzira", "Vornira", "Ralzira", "Marlira", "Serlira", 
+  "Azlira", "Tarmira", "Jarlina", "Selrith", "Kazira", "Harzina", "Nerlira", "Malzira", "Tharnira", "Belnira", 
+  "Azlin", "Kelina", "Zelmina", "Tarin", "Serlira", "Kalthira", "Harina", "Jorina", "Feslira", "Ulzira", 
+  "Helzira", "Tarzina", "Selina", "Iralira", "Felrina", "Marina", "Thalmira", "Velrina", "Sarnira", "Jorlina", 
+  "Tharza", "Belzira", "Varmina", "Kazlira", "Zelmira", "Ralina", "Tarnil", "Jezira", "Selanira", "Zorina", 
+  "Ithira", "Thamra", "Kelrina", "Belnira", "Falzira", "Varlira", "Helrin", "Salzira", "Thamira", "Kazelia", 
+  "Velrith", "Nethra", "Mirzina", "Sarnila", "Zanira", "Kalzira", "Zarmina", "Ithlira", "Marlina", "Helthira", 
+  "Belzara", "Taranil", "Valina", "Seldra", "Kalthira", "Zorin", "Selira", "Narlira", "Belnira", "Tharlira", 
+  "Tormira", "Jelra", "Zelmira", "Tharmira", "Farnira", "Kazira", "Selrania", "Jasrina", "Varzina", "Melrina", 
+  "Belrith", "Valmin", "Karmina", "Serira", "Harina", "Zorila", "Sarnira", "Thalia", "Zanira", "Felmira", 
+  "Narthira", "Mirlina", "Azmira", "Kelira", "Harmira", "Melzira", "Salmira", "Tarnira", "Falzina", "Narnira", 
+  "Helzira", "Jathira", "Valina", "Zariza", "Melrina", "Sethira", "Azharina", "Berlina", "Thalina", "Varzina", 
+  "Serzina", "Kalthra", "Fesira", "Helmina", "Azlira", "Tharnira", "Varlira", "Ralzina", "Jalrina", "Selrina", 
+  "Belina", "Kazina", "Zorira", "Varlina", "Melina", "Harzina", "Tormina", "Thamira", "Velrina", "Azrina", 
+  "Selzrina", "Marliza", "Tarlira", "Kazrina", "Zethira", "Narliza", "Thalira", "Sorlira", "Zarnira", "Valzira",
+
+  "Bonga", "Skrunga", "Gromba", "Bunkulona", "Dargala", "Kalimaka", "Pioma", 
+  "Murbaga", "Alakryta", "Rugowia", "Raczakia", "Usztora", "Czilimtara", 
+  "Lewizjona", "Kambetara", "Agima", "Tropia", "Drenika", "Torlaka", "Doskozila"]
+}
+
 export const humanMasculineNames = function (){
   let list = []
   list.push(pickFromList(maleSlavicNames))
   list.push(pickFromList(WHFMaleHumanNames))
+  list.push(pickFromList(masculineTharkianNames))
+  return {
+    type: "pickerRoller",
+    list
+  }
+}
+
+export const humanFeminineNames = function (){
+  let list = []
+  list.push(pickFromList(feminineTharkianNames))
   return {
     type: "pickerRoller",
     list
