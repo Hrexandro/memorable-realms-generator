@@ -2272,6 +2272,64 @@ export const WHFMaleHumanNames = {
   ],
 };
 
+export const femaleUlmiteNames = {
+  type: "picker",
+  list:[
+    "Abbie", "Abighild", "Abigund", "Ada", "Adel", "Adelind", "Adelle", "Adelyn", "Agathe", "Agnes", 
+    "Agneta", "Agnete", "Agnetta", "Agnetz", "Agnise", "Aldreda", "Aleid", "Alette", "Alexa", "Alfreda", 
+    "Alfrida", "Alice", "Alicia", "Alke", "Allane", "Almala", "Althea", "Alusch", "Amali", "Amalyn", 
+    "Andrea", "Anhilda", "Anika", "Anja", "Anna", "Annabel", "Anne", "Anthea", "Anya",
+    "Apollonia", "Arabella", "Astrid", "Aver", "Aythe", "Barbara", "Beate", "Beatrix", "Bechilda", 
+    "Bellane", "Benedicta", "Benusch", "Berchte", "Berlinda", "Berlyn", "Bertha", "Berthilda", 
+    "Bertradis", "Bertrod", "Bess", "Beth", "Bianka", "Birgit", "Brigitte", "Brita", "Britt", 
+    "Broncea", "Brunhilda", "Brunhilde", "Camilla", "Carina", "Carla", "Carlinda", "Carlotta", 
+    "Carmilla", "Casarea", "Cecilia", "Charlotte", "Christine", "Cilicia", "Cilie", "Clare", 
+    "Claudia", "Clora", "Clothilda", "Connie", "Constance", "Constanza", "Cordelia", "Cunneke", 
+    "Dagmar", "Demona", "Demut", "Desdemona", "Dora", "Dorothie", "Dorthilda", "Drachena", 
+    "Drachilda", "Edhilda", "Edith", "Edyth", "Edythe", "Eleanor", "Elena", "Elene", "Elfrida", 
+    "Elinor", "Elisabeth", "Elise", "Elisinda", "Elke", "Ella", "Ellene", "Ellinde", "Eloise", 
+    "Elsabeth", "Elsbeth", "Else", "Elsina", "Elyn", "Elzabeth", "Emagunda", "Emelia", 
+    "Emerlinde", "Emerlyn", "Emilie", "Emmalyn", "Emmanuelle", "Emme", "Eneide", "Engel", 
+    "Engeltrud", "Ennelein", "Erica", "Erika", "Ermegart", "Ermel", "Ermina", "Erminlind", 
+    "Ermintrude", "Esmeralda", "Esmerelde", "Estelle", "Esther", "Ethelka", "Etheldreda", 
+    "Ethelind", "Ethelreda", "Eufemia", "Eva", "Fay", "Femeke", "Franziska", "Freya", 
+    "Frieda", "Friedhilda", "Friedrica", "Friedrun", "Fronika", "Gabby", "Gabi", 
+    "Gabrielle", "Galina", "Gele", "Gena", "Genevieve", "Genovega", "Gerberga", "Gerda", 
+    "Gerdrut", "Gerke", "Gerlinde", "Gertie", "Gertrude", "Geruscha", "Gilda", "Gina", 
+    "Girdrud", "Girlin", "Gitta", "Greta", "Gretchen", "Gretel", "Grite", "Grizelda", 
+    "Grunhilda", "Gudradis", "Gudrun", "Gudryn", "Gutel", "Hanna", "Hedwig", "Heidi", 
+    "Heidrun", "Heile", "Heilwig", "Helena", "Helene", "Helga", "Helusch", "Herburg", 
+    "Herlinde", "Herwig", "Heske", "Hezke", "Hildegard", "Hildegart", "Hildegund", "Hille", 
+    "Hilusch", "Honoria", "Hunni", "Ida", "Ilga", "Ilsa", "Ilse", "Inga", "Ingrid", 
+    "Ingrund", "Irene", "Irina", "Irmegard", "Irmel", "Irmeltrud", "Irmine", "Irmusch", 
+    "Isabella", "Isadora", "Isentrud", "Isolde", "Janna", "Jarla", "Jocelin", "Johanna", 
+    "Josie", "Juliana", "Julianne", "Jutte", "Karelia", "Karina", "Karmilla", "Karoline", 
+    "Kasarea", "Katharina", "Katharine", "Katherina", "Katherine", "Katheryn", "Katia", 
+    "Katrina", "Katusch", "Keterlind",
+    "Keterlyn", "Kethe", "Kirstan", "Kirsten", "Kirstin", "Kirstyn", "Kitty", "Klara", "Klare", 
+    "Konusch", "Kristena", "Kristyn", "Kunegunde", "Kunne", "Lavinia", "Leanora", "Lena", 
+    "Leni", "Lenne", "Lenora", "Lenore", "Leonore", "Leticia", "Letty", "Libeste", "Libusch", 
+    "Liphilt", "Lisabeth", "Lise", "Lizzie", "Lorinda", "Lorna", "Lucie", "Lucinda", "Lucretia", 
+    "Ludmilla", "Luise", "Lusche", "Mabel", "Madge", "Magdalena", "Magdalene", "Magdalyn", 
+    "Maggie", "Maghilda", "Maglind", "Maglyn", "Magreta", "Magunda", "Maida", "Maneth", 
+    "Manith", "Margarethe", "Margaritha", "Marguerite", "Margaret", "Margreta", "Marianne", 
+    "Marietta", "Marien", "Marlene", "Marline", "Marlyn", "Martha", "Marte", "Martina", 
+    "Marusch", "Mathilda", "Mathilde", "Maude", "May", "Mechthild", "Meg", "Melicent", 
+    "Merlin", "Mina", "Miranda", "Moll", "Mute", "Natasha", "Natassia", "Nathilda", "Neleke", 
+    "Nellie", "Nethe", "Nora", "Nyze", "Olga", "Ophelia", "Osanna", "Ostelle", "Osterhildis", 
+    "Ostia", "Otilge", "Ottagunda", "Ottaline", "Ottilia", "Ottilda", "Ottilie", "Ottilyn", 
+    "Pedra", "Perdita", "Pergale", "Pergunda", "Petronella", "Phie", "Philomelia", "Regina", 
+    "Regine", "Reikhilda", "Renata", "Renate", "Rosanne", "Rosabel", "Rosabella", "Rosale", 
+    "Rosalia", "Rosalinde", "Rosamunde", "Rozhilda", "Salina", "Salmei", "Salomea", "Saltza", 
+    "Sanne", "Selena", "Selene", "Sigismunda", "Sigmara", "Sigmare", "Sigmaris", "Sigrud", 
+    "Silma", "Solla", "Solveig", "Sophie", "Susanna", "Susanne", "Susi", "Sziell", "Szina", 
+    "Szine", "Talima", "Theda", "Theodora", "Therese", "Thilde", "Thylda", "Tilde", "Tilea", 
+    "Ulla", "Ulrica", "Ulrike", "Ursula", "Uschi", "Ute", "Valeria", "Verena", "Veronica", 
+    "Wanda", "Wertha", "Wilfrieda", "Wilhelmina", "Winifred", "Wolfhilde", "Zemelda", "Zena"
+  ]
+}
+
+
 export const wizardsAndClerics = {
   type: "picker",
   list: [
@@ -2492,9 +2550,23 @@ export const masculineElfNames = {
   ]
 }
 
+const tharkianLastNames = [
+  "Ravaro", "Tarmis", "Kolvaren", "Veldros", "Dalthir", "Zandek", "Belanor", "Kasrend", "Orvathar", "Seldrakis", 
+  "Veskor", "Thranev", "Makarin", "Gavrilon", "Nadros", "Kelrith", "Halthor", "Faladir", "Sarvak", "Jalithor", 
+  "Valzek", "Zarveth", "Selkaran", "Nathirak", "Balkor", "Jazmir", "Dralveth", "Zalthon", "Kadrin", "Vornel", 
+  "Tazekor", "Harveth", "Zalorin", "Kelvoran", "Malnith", "Feldrik", "Tarnor", "Zelkoris", "Ralveth", "Ultharin", 
+  "Morveth", "Valketh", "Tormak", "Draneth", "Zorlen", "Kaldran", "Valrith", "Rothenor", "Berkorin", "Drenveth",
+
+  "Zamboru", "Kalimba", "Djakorin", "Temboza", "Bokhara", "Makariq", "Zulvahn", "Kamdara", "Nashemu", "Alzurai", 
+  "Jaburiq", "Nzalao", "Mokhazi", "Karumba", "Tembeko", "Balawen", "Rondajo", "Sulareq", "Zanduba", "Varnamu", 
+  "Jahkuro", "Belkatu", "Tazambo", "Ulongo", "Mandiro", "Jolambi", "Kasumba", "Korduba", "Jamhira", "Nzoreka", 
+  "Falkomo", "Sokhazi", "Ulubari", "Nzinga", "Kharafu", "Torombo", "Jaluzor", "Orumeku", "Ranziba", "Zarkema", 
+  "Thakoro", "Naziriq", "Lambora", "Zabaku", "Jambala", "Mokenzi", "Tashora", "Kimbari", "Harniru", "Zorambu"
+];
+
 export const masculineTharkianNames = {
-  type: "picker",
-  list: [  "Azrik", "Hamilkar", "Balhan", "Zarqon", "Meskalon", "Jadhem", "Safir", "Hasdrubal", "Motep", "Serpin", 
+  type: "mixerSpaced",
+  prefix: [  "Azrik", "Hamilkar", "Balhan", "Zarqon", "Meskalon", "Jadhem", "Safir", "Hasdrubal", "Motep", "Serpin", 
   "Belashar", "Malqar", "Kamon", "Hannib", "Sabrak", "Tukar", "Barakesh", "Malzim", "Tibun", "Korabel", 
   "Zimran", "Selkar", "Uthil", "Ashkar", "Baalher", "Ezraq", "Zibran", "Adzubar", "Hirbal", "Lokmen", 
   "Murdan", "Ashbel", "Zartan", "Samirak", "Nabtel", "Fezzir", "Mastan", "Irdan", "Hamirak", "Gelash", 
@@ -2535,16 +2607,18 @@ export const masculineTharkianNames = {
   "Kazrim", "Balthar", "Jolhim", "Kelzrin", "Falthor", "Varnor", "Zelzor", "Jarneth", "Kelgrim", "Rothar", 
   "Thalgrim", "Harzor", "Selrik", "Felthor", "Ithrin", "Garneth", "Belhelm", "Melhar", "Tharnil", "Veldrim", 
   "Thargrim", "Sarnor", "Varzor", "Jelthar", "Nalthor", "Kazril", "Farneth", "Jarnor", "Tornil", "Kalzrin", 
-  
+
   "Serdrim", "Varnel", "Thalrim", "Zornil", "Karthor", "Tazhel", "Jornil",
   "Bongo", "Skrungus", "Grombo", "Bunkulon", "Dargalo", "Kalimak", "Piom", 
   "Murbag", "Alakryt", "Rugow", "Raczak", "Usztor", "Czilimtar", "Lewizjon", 
-  "Kambetar", "Agim", "Tropos", "Drenik", "Torlak", "Doskozil"]
+  "Kambetar", "Agim", "Tropos", "Drenik", "Torlak", "Doskozil"],
+  suffix: tharkianLastNames
+
 }
 
 export const feminineTharkianNames = {
-  type: "picker",
-  list: [  "Anzira", "Zilara", "Hathra", "Belit", "Naris", "Selmara", "Mardis", "Orzani", "Shabira", "Zephira", 
+  type: "mixerSpaced",
+  prefix: [  "Anzira", "Zilara", "Hathra", "Belit", "Naris", "Selmara", "Mardis", "Orzani", "Shabira", "Zephira", 
   "Althis", "Ilzira", "Hafra", "Nuzira", "Kazira", "Mirzel", "Samrah", "Izdani", "Elnaris", "Bahira", 
   "Asmaris", "Melthia", "Jalith", "Raniah", "Yazira", "Halira", "Zekira", "Arfah", "Lamira", "Izhtir", 
   "Qalith", "Munaqir", "Thalira", "Zantara", "Azenis", "Thamira", "Tamzara", "Nemira", "Ashira", "Samina", 
@@ -2587,8 +2661,12 @@ export const feminineTharkianNames = {
 
   "Bonga", "Skrunga", "Gromba", "Bunkulona", "Dargala", "Kalimaka", "Pioma", 
   "Murbaga", "Alakryta", "Rugowia", "Raczakia", "Usztora", "Czilimtara", 
-  "Lewizjona", "Kambetara", "Agima", "Tropia", "Drenika", "Torlaka", "Doskozila"]
+  "Lewizjona", "Kambetara", "Agima", "Tropia", "Drenika", "Torlaka", "Doskozila"],
+  suffix: tharkianLastNames
 }
+
+
+
 
 export const humanMasculineNames = function (){
   let list = []
@@ -2604,6 +2682,8 @@ export const humanMasculineNames = function (){
 export const humanFeminineNames = function (){
   let list = []
   list.push(pickFromList(feminineTharkianNames))
+  list.push(pickFromList(femaleUlmiteNames))
+  
   return {
     type: "pickerRoller",
     list

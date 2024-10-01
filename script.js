@@ -15,7 +15,8 @@ import {
   humanMasculineNames,
   masculineTharkianNames,
   feminineTharkianNames,
-  humanFeminineNames
+  humanFeminineNames,
+  femaleUlmiteNames
 
 
 } from "./names.js";
@@ -164,12 +165,13 @@ let namesAndCategories = [//add names here
   {list: fantasticCreatures, name: "Fantastyczne Istoty (DCC)"},
   {list: humanoids, name: "Humanoidzi (DCC)"},
   {list: humanMasculineNames, name: "Ludzkie - męskie"},
-  {list: humanFeminineNames, name: "Ludzkie - żeńkie"},
+  {list: humanFeminineNames, name: "Ludzkie - żeńskie"},
   {list: orkishNames, name: "Orcze"},
   {list: maleSlavicNames, name: "Swardońskie - męskie"},
   {list: masculineTharkianNames, name: "Tharkiańskie - męskie" },
   {list: feminineTharkianNames, name: "Tharkiańskie - żeńskie"},
   {list: WHFMaleHumanNames, name: "Ulmickie - męskie"},
+  {list: femaleUlmiteNames, name: "Ulmickie - żeńskie"},
   {list: warriorsAndThieves, name: "Wojownicy i Złodzieje (DCC)"},
   {list: maleLatinNames},
   {list: maleRussianNames},
