@@ -19,6 +19,7 @@ import {
   femaleUlmiteNames,
   maleSarentineNames,
   femaleSarentineNames,
+  femaleSwardonianNames
 
 
 } from "./names.js";
@@ -172,6 +173,7 @@ let namesAndCategories = [//add names here
   {list: maleSarentineNames, name: "Sarentyńskie - męskie"},
   {list: femaleSarentineNames, name: "Sarentyńskie - żeńskie"},
   {list: maleSlavicNames, name: "Swardońskie - męskie"},
+  {list: femaleSwardonianNames, name: "Swardońskie - żeńskie"},
   {list: masculineTharkianNames, name: "Tharkiańskie - męskie" },
   {list: feminineTharkianNames, name: "Tharkiańskie - żeńskie"},
   {list: WHFMaleHumanNames, name: "Ulmickie - męskie"},
