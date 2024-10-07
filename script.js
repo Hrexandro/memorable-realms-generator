@@ -16,7 +16,9 @@ import {
   masculineTharkianNames,
   feminineTharkianNames,
   humanFeminineNames,
-  femaleUlmiteNames
+  femaleUlmiteNames,
+  maleSarentineNames,
+  femaleSarentineNames,
 
 
 } from "./names.js";
@@ -167,6 +169,8 @@ let namesAndCategories = [//add names here
   {list: humanMasculineNames, name: "Ludzkie - męskie"},
   {list: humanFeminineNames, name: "Ludzkie - żeńskie"},
   {list: orkishNames, name: "Orcze"},
+  {list: maleSarentineNames, name: "Sarentyńskie - męskie"},
+  {list: femaleSarentineNames, name: "Sarentyńskie - żeńskie"},
   {list: maleSlavicNames, name: "Swardońskie - męskie"},
   {list: masculineTharkianNames, name: "Tharkiańskie - męskie" },
   {list: feminineTharkianNames, name: "Tharkiańskie - żeńskie"},
