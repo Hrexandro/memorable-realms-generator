@@ -673,6 +673,31 @@ const medievalProfessions = {
   ],
 };
 
+const townNames = {
+  type: "mixerConcatenated",
+  prefix: [  "Agi", "Alea", "Alex", "Amphi", "Andro", "Anthi", "Antio", "Archa", "Ari", "Astra", 
+  "Basil", "Byza", "Chalci", "Chryso", "Cleo", "Cor", "Cyclo", "Deme", "Diag", "Doro", 
+  "Eleu", "Epi", "Etho", "Eryth", "Gal", "Gorgo", "Heli", "Her", "Hier", "Hipp", 
+  "Ithaca", "Ioni", "Iska", "Kall", "Kara", "Kata", "Koro", "Laco", "Lami", "Leto", 
+  "Lysi", "Magni", "Mega", "Melano", "Metri", "Myce", "Myro", "Neme", "Neo", "Nik", 
+  "Oeno", "Olym", "Orphe", "Pale", "Pan", "Pano", "Pelas", "Pente", "Perga", "Pho", 
+  "Pira", "Plato", "Poly", "Pria", "Prota", "Rhe", "Samos", "Selen", "Sino", "Skopi", 
+  "Smyr", "Spor", "Steli", "Syra", "Tele", "Thero", "Thermi", "Thes", "Thrace", "Trimo", 
+  "Tymp", "Xantho", "Xer", "Zante", "Zar", "Zephy", "Zeno", "Zora", "Acri", "Arc", 
+  "Aris", "Athe", "Castro", "Delphi", "Egi", "Orest", "Sparti", "Tyr"],
+  suffix: [  "polis", "thos", "nos", "tos", "leos", "menos", "thon", "ros", "nia", "thon",
+  "essa", "ri", "dos", "peia", "neia", "phos", "thys", "idas", "thia", "neia", 
+  "thra", "on", "tas", "ios", "sia", "kia", "dis", "thon", "neus", "ron", "trix", 
+  "xa", "ra", "tos", "pyla", "dra", "thra", "ris", "tes", "dor", "ros", "sta", 
+  "cus", "lis", "mis", "xis", "gen", "tris", "phia", "ides", "ra", "menos", "tos", 
+  "phos", "nes", "mos", "ros", "lith", "bios", "los", "kia", "ta", "es", "nius", 
+  "ros", "dion", "thon", "peion", "ra", "tia", "pus", "ndros", "lyn", "kra", 
+  "phoros", "dora", "leion", "rix", "zios", "plis", "nathos", "moros", "rinth", 
+  "sos", "lon", "stos", "ron", "nyx", "phix", "cha", "phon", "theon", "teros", 
+  "dri", "prios", "tora", "dris", "don", "panos", "xys"]
+
+}
+
 generateButton.addEventListener("click", () => {
   updatePick();
   const result = [];
