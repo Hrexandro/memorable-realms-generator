@@ -19,8 +19,9 @@ import {
   femaleUlmiteNames,
   maleSarentineNames,
   femaleSarentineNames,
-  femaleSwardonianNames
-
+  femaleSwardonianNames,
+  dwarvenMasculineNames,
+  dwarvenMFeminineNames
 
 } from "./names.js";
 
@@ -167,6 +168,8 @@ let namesAndCategories = [//add names here
   {list: feminineElfNames, name: "Elfie - żeńskie"},
   {list: fantasticCreatures, name: "Fantastyczne Istoty (DCC)"},
   {list: humanoids, name: "Humanoidzi (DCC)"},
+  {list: dwarvenMasculineNames, name: "Krasnoludzkie - męskie"},
+  {list: dwarvenMFeminineNames, name: "Krasnoludzkie - żeńskie"},  
   {list: humanMasculineNames, name: "Ludzkie - męskie"},
   {list: humanFeminineNames, name: "Ludzkie - żeńskie"},
   {list: orkishNames, name: "Orcze"},

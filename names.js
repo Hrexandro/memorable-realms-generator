@@ -3057,6 +3057,7 @@ export const humanoids = {
 export const feminineElfNames = {
    type: "picker",
     list: [
+      //lotr
     "Amarië",
     "Anairë",
     "Aredhel",
@@ -3081,7 +3082,68 @@ export const feminineElfNames = {
     "Nimrodel",
 
     "Eärwen",
-    "Tatië"
+    "Tatië",
+    //pl nature
+    "Dalia",
+    "Malwina",
+    "Róża",
+    "Liliana",
+    "Bytomira",
+    "Malina",
+    "Jagoda",
+    "Kalina",
+    "Akacja",
+    "Aksamitka",
+    "Alstremeria",
+    "Azalia",
+    "Begonia",
+    "Brzoza",
+    "Cykoria",
+    "Dalila",
+    "Dalia",
+    "Dąbrówk",
+    "Gardenia",
+    "Hortensja",
+    "Jagoda",
+    "Jarzębina",
+    "Kalina",
+    "Konwalia",
+    "Lawenda",
+    "Magnolia",
+    "Malina",
+    "Oliwka",
+    "Paproć",
+    "Pierwiosnka",
+    "Poziomka",
+    "Róża",
+    "Śnieguliczka",
+    "Sosna",
+    "Szarotka",
+    "Wrzosina",
+    "Wierzba",
+    "Żywotka",
+    "Wilczyna",
+    "Lilia",
+    "Fiołka",
+    "Dąbrowa",
+    "Jodła",
+    "Sasanka",
+    "Stokrotka",
+    "Tarnina",
+    "Topola",
+    "Trzcina",
+    "Gorczyca",
+    "Manna",
+    "Ostrzyca",
+    "Jaszczurka",
+    "Śliwa",
+    "Żmija",
+    "Jemioła",
+    "Trzmielina",
+    "Klęża",
+    "Dębina",
+    "Pokrzywa",
+    "Paprotka"
     
   ]
 }
@@ -3090,6 +3152,8 @@ export const masculineElfNames = {
     type: "picker",
     list: [
     "Corellian",
+
+    //lotr
     "Aegnor",
     "Amdír",
     "Amras",
@@ -3111,7 +3175,7 @@ export const masculineElfNames = {
     "Edrahil",
     "Egalmoth",
     "Elemmakil",
-    "Elu Thingol",
+    "Elu",
     "Elmo",
     "Elrond",
     "Enel",
@@ -3134,7 +3198,7 @@ export const masculineElfNames = {
     "Inglorion",
     "Gildor",
     "Gil-galad",
-    "Gimli",
+    //"Gimli",
     "Glorfindel",
     "Gwindor",
     "Haldir",
@@ -3170,7 +3234,67 @@ export const masculineElfNames = {
     "Salgant",
     "Turgon",
     "Tuor",
-    "Voronwë"
+    "Voronwë",
+    "Thingol",
+
+    //pl nature
+
+    "Hiacynt",
+    "Chryzant",
+    "Narcyz",
+    "Puszczyk",
+    "Marchwin",
+    "Bazyl",
+    "Cedr",
+    "Cyprys",
+    "Dąb",
+    "Floks",
+    "Grusz",
+    "Imbir",
+    "Jałowiec",
+    "Jarząb",
+    "Jesion",
+    "Kalin",
+    "Karmel",
+    "Kasztan",
+    "Krokus",
+    "Krzew",
+    "Laurowy",
+    "Lipiec",
+    "Leszczyn",
+    "Mak",
+    "Modrzew",
+    "Orzech",
+    "Powojnik",
+    "Rozmaryn",
+    "Szafran",
+    "Świerk",
+    "Wawrzyn",
+    "Wrzos",
+    "Żarnowiec",
+    "Żubr",
+    "Łubin",
+    "Szakal",
+    "Lis",
+    "Sokół",
+    "Orzeł",
+    "Kruk",
+    "Kormoran",
+    "Wilk",
+    "Wiewiór",
+    "Kozioróg",
+    "Goździk",
+    "Irys",
+    "Jaśmin",
+    "Fiołek",
+    "Rdest",
+    "Wrzos",
+    "Wiąz",
+    "Żmij",
+    "Niecierpek",
+    "Jaszczur",
+    "Grab",
+    "Posłonek"
   ]
 }
 
@@ -3235,7 +3359,12 @@ export const masculineTharkianNames = {
   "Serdrim", "Varnel", "Thalrim", "Zornil", "Karthor", "Tazhel", "Jornil",
   "Bongo", "Skrungus", "Grombo", "Bunkulon", "Dargalo", "Kalimak", "Piom", 
   "Murbag", "Alakryt", "Rugow", "Raczak", "Usztor", "Czilimtar", "Lewizjon", 
-  "Kambetar", "Agim", "Tropos", "Drenik", "Torlak", "Doskozil"],
+  "Kambetar", "Agim", "Tropos", "Drenik", "Torlak", "Doskozil",
+
+  "Goristroy", "Goris", "Balmor", "Horker", "Xhan", "Thark", , 
+  "Dzorak", "Nerellen", "Oghun", "Urkhun", "Astorg", "Savar", "Galinar", 
+  "Ossonob", "Gargan", "Borbet", "Rodun", "Galinar", "Caramon", "Amudan", 
+  ],
   suffix: tharkianLastNames
 
 }
@@ -3285,7 +3414,11 @@ export const feminineTharkianNames = {
 
   "Bonga", "Skrunga", "Gromba", "Bunkulona", "Dargala", "Kalimaka", "Pioma", 
   "Murbaga", "Alakryta", "Rugowia", "Raczakia", "Usztora", "Czilimtara", 
-  "Lewizjona", "Kambetara", "Agima", "Tropia", "Drenika", "Torlaka", "Doskozila"],
+  "Lewizjona", "Kambetara", "Agima", "Tropia", "Drenika", "Torlaka", "Doskozila",
+
+  "Goristroya", "Meldrima", "Nerellena", "Oghuna", "Urkhuna", 
+  "Astorgha", "Savaria", "Galinara", "Ossonoba", "Gargana", 
+  "Galinara", "Golgarana", "Sarentia", "Sarentina"],
   suffix: tharkianLastNames
 }
 
@@ -4038,7 +4171,15 @@ export const maleSarentineNames = {
   "Zosimos",
   "Zosimus",
   "Zoticus",
-  "Zotikos"
+  "Zotikos",
+
+
+  "Goristroy", "Goris", "Balmor", "Horker", "Xhan", "Thark", "Meldrim", 
+  "Dzorak", "Nerellen", "Oghun", "Urkhun", "Astorg", "Savar", "Galinar", 
+  "Ossonob", "Gargan", "Borbet", "Rodun", "Galinar", "Caramon", "Amudan", 
+  "Golgaranus", "Golgaras", "Sarentis", "Sarentius",
+    //golgaran
+  "Mitra", "Varuna", "Nasatya", "Yamhad", "Syzygios"
   ]
 }
 
@@ -4569,7 +4710,12 @@ export const femaleSarentineNames = {
   "Yianna", 
   "Zenovia", 
   "Zinovia", 
-  "Zoi"
+  "Zoi",
+
+
+  "Goristroya", "Meldrima", "Nerellena", "Oghuna", "Urkhuna", 
+  "Astorgha", "Savaria", "Galinara", "Ossonoba", "Gargana", 
+  "Galinara", "Golgarana", "Sarentia", "Sarentina"
 ]
 }
 
@@ -4595,6 +4741,260 @@ export const humanFeminineNames = function (){
   list.push(pickFromList(feminineTharkianNames))
   list.push(pickFromList(femaleUlmiteNames))
   list.push(pickFromList(femaleSarentineNames))
+  list.push(pickFromList(femaleSwardonianNames))
+  return {
+    type: "pickerRoller",
+    list
+  }
+}
+
+const dwarvenLastNames = function (){
+  let list = []
+  let masculineAdjective = [
+    "Złoty",
+
+    "Srebrny",
+    "Stalowy",
+    "Żelazny",
+    "Miedziany",
+    "Cynowy",
+    "Dębowy",
+    "Krwawy",
+    "Czerwony",
+    "Zielony",
+    "Niebieski",
+    "Czarny",
+    "Granitowy",
+    "Kamienny",
+    "Twardy",
+    "Stary",
+    "Posępny",
+    "Bazaltowy"]
+
+  let feminineAdjective = [
+  "Złota",
+  "Srebrna",
+  "Stalowa",
+  "Żelazna",
+  "Miedziana",
+  "Cynowa",
+  "Dębowa",
+  "Krwawa",
+  "Czerwona",
+  "Zielona",
+  "Niebieska",
+  "Czarna",
+  "Granitowa",
+  "Kamienna",
+  "Twarda",
+  "Stara",
+  "Posępna",
+  "Bazaltowa"]
+  let masculineNoun = [
+    "Hełm", "Młot", "Topór", "Oszczep", "Kamień", "Kilof", "Nos", "Miecz", "Czerep"
+  ]
+  let feminineNoun = [
+    "Góra", "Tarcza", "Pięść", "Broda", "Skała", "Pięta", "Brew", "Twierdza", "Forteca", "Brama", "Księga"
+  ]
+
+  list.push(randomizeFromArray(masculineAdjective) + " " + randomizeFromArray(masculineNoun))
+  list.push(randomizeFromArray(feminineAdjective) + " " + randomizeFromArray(feminineNoun))
+  return {
+    type: "pickerRoller",
+    list
+  }
+}
+
+export const dwarvenMasculineNames = function (){
+  let list = []
+  let dwarvenMasculineFirstNames = [
+    "Grungnir",
+    "Berelas",
+
+    //old whfb
+    "Alaric",
+    "Algrim",
+    "Alrik",
+    "Baragor",
+    "Bardin",
+    "Belegar",
+    "Belegol",
+    "Borgin",
+    "Borin",
+    "Bradni",
+    "Brogar",
+    "Brokk",
+    "Brondl",
+    "Bronn",
+    "Burlok",
+    "Cranneg",
+    "Darbli",
+    "Dargo",
+    "Dern",
+    "Dimrond",
+    "Dimzad",
+    "Dorin",
+    "Drong",
+    "Drumin",
+    "Durak",
+    "Duregar",
+    "Durgin",
+    "Dwinbar",
+    "Elmador",
+    "Enlag",
+    "Fenni",
+    "Fimbur",
+    "Finn",
+    "Furgil",
+    "Garil",
+    "Goddi",
+    "Gomrund",
+    "Gorazin",
+    "Gorim",
+    "Gorm",
+    "Gotrek",
+    "Gottri",
+    "Grim",
+    "Grimli",
+    "Grindol",
+    "Grom",
+    "Grond",
+    "Groth",
+    "Grum",
+    "Grumdin",
+    "Grundi",
+    "Grung",
+    "Grunni",
+    "Guttri",
+    "Haakon",
+    "Hadra",
+    "Harek",
+    "Hargin",
+    "Hargrim",
+    "Harok",
+    "Heganbor",
+    "Hergar",
+    "Hugnir",
+    "Hurgar",
+    "Kadri",
+    "Kadrin",
+    "Kallon",
+    "Kargun",
+    "Katalin",
+    "Kazadar",
+    "Kazgar",
+    "Kazran",
+    "Kazrik",
+    "Ketil",
+    "Kettri",
+    "Kragg",
+    "Krudd",
+    "Kurgan",
+    "Largs",
+    "Logan",
+    "Logazor",
+    "Lunn",
+    "Mendri",
+    "Mordin",
+    "Morek",
+    "Mundri",
+    "Norgrim",
+    "Oldor",
+    "Ragni",
+    "Rogni",
+    "Rorek",
+    "Rungni",
+    "Skag",
+    "Skaldor",
+    "Skalf",
+    "Skalli",
+    "Skorri",
+    "Sindri",
+    "Snorri",
+    "Stromni",
+    "Storri",
+    "Sundrim",
+    "Sven",
+    "Thingrim",
+    "Thori",
+    "Thrund",
+    "Thungni",
+    "Thurgrom",
+    "Thyk",
+    "Ulfar",
+    "Ulther",
+    "Vikram",
+    "Vragni",
+    "Yadri",
+    "Yanni",
+    "Yorri",
+    "Zamnil",
+
+    //lotr + chechens
+
+    "Thorin", "Balin", "Bifur", "Bofur", "Bombur", "Dori", "Dwalin", "Filin", "Gloin", "Groin",
+    "Kili", "Nori", "Oin", "Ori", "Nogrod", "Belegost", "Azaghal", "Gamil", "Zirak", "Telchar",
+    "Frerin", "Fundin", "Nain", "Gror", "Ibun", "Khim", "Abbas", "Avdulbek", "Avdulhamid", 
+    "Avdulkerim", "Adlan", "Avdulmezhid", "Avdulvagap", "Avdulvakhid", "Abuali", "Abukhan", 
+    "Alambek", "Alkhazur", "Alvi", "Andarbek", "Anzor", "Apti", "Arbi", "Argun", "Arzu", 
+    "Aslan", "Asmart", "Asu", "Avtorhan", "Aydamir", "Ayndi", "Badruddin", "Bakar", "Bashir", 
+    "Batir", "Baysangur", "Bekhan", "Boysaghar", "Bula", "Buvaysar", "Dalkhan", "Doku", 
+    "Dugurkhan", "Durgali", "Dzhambulat", "Edil", "Elbek", "Elberd", "Elbrus", "Eldar", 
+    "Elimbi", "Elimkhan", "Eriskhan", "Ibragim", "Idris", "Ilman", "Ilyas", "Imran", 
+    "Irskhan", "Isa", "Ismaal", "Kagir", "Keram", "Kharon", "Khizir", "Lechi", "Makkal", 
+    "Mansur", "Mikail", "Movlid", "Movsar", "Murad", "Murvan", "Musa", "Nurdi", "Olkhazar", 
+    "Umar", "Ovlur", "Ramzan", "Rasul", "Rizvan", "Ruslan", "Rustam", "Salam", "Salman", 
+    "Sulim", "Suliman", "Sulimat", "Sutarbi", "Shahab", "Shamil", "Tapa", "Tasho", "Timur", 
+    "Turpal", "Umalt", "Usam", "Valid", "Yandar", "Yandarbi", "Yaqub", "Yunadi", "Yunus", 
+    "Zakir", "Zaur", "Zayndi", "Zelim", "Zoltan", "Yarpen", "Zubair", "Aldar", "Arkat", 
+    "Athranbor", "Balkrag", "Bardin", "Bardul", "Bazrak", "Borin", "Rogni", "Burlok", 
+    "Dalbran", "Dorin", "Durggan", "Durzak", "Dwalik", "Falki", "Furagrum", "Garagrim", 
+    "Kazor", "Garik", "Golengol", "Golengil", "Gotri", "Grim", "Grunn", "Grod", 
+    "Grombrindal", "Ulther", "Thorgrek", "Thorek", "Sven", "Snorri", "Skeggi", "Malatok", 
+    "Malakai", "Kragg", "Kragdin", "Josef", "Jorek", "Hegakin", "Harok", "Harlok", 
+    "Gurdok", "Avtandil", "Gimli", "Zaurak",
+
+    //jewish
+    "Amos", "Ariel", "Adar", "Doron", "Dagan", "Eitan", "Erez", "Harel", "Ilan", "Jonatan",
+    "Liron", "Matan", "Noam", "Omri", "Ronen", "Sapir", "Tamir", "Zoar", "Yaron", "Yoram",
+    "Yarden", "Kadosz", "Jakow", "Amit", "Imit", "Mordechaj", "Kohen", "Sopron", "Oren", 
+    "Meraw"
+  ]
+  list.push(randomizeFromArray(dwarvenMasculineFirstNames) + " " + pickFromList(dwarvenLastNames))
+
+  return {
+    type: "pickerRoller",
+    list
+  }
+
+}
+
+export const dwarvenMFeminineNames = function (){
+  let list = []
+  let dwarvenFeminineFirstNames = ["Grungnira",
+  "Alrika", "Askima", "Astrid", "Berta", "Boria", "Breda", "Brondra", "Derna", "Dorbi", "Duree", 
+  "Fenna", "Freda", "Friga", "Gerta", "Gottra", "Grondi", "Grunna", "Harga", "Helga", "Helgar", 
+  "Hunni", "Kalea", "Karelia", "Karga", "Karstin", "Katrin", "Kettra", "Lakin", "Lenka", "Magda", 
+  "Menni", "Modra", "Morga", "Olka", "Sifna", "Sigrid", "Sigrun", "Skorina", "Solveig", "Sunni", 
+  "Tarni", "Tharma", "Thindra", "Thoda", "Throlin", "Trunni", "Ulla",
+  "Vala", "Valma", "Vanyra", "Zylra",
+
+
+
+  "Alma", "Amira", "Aviva", "Chamita", "Dalia", "Dina", "Dafna", "Edna", "Hila", 
+  "Irit", "Ruta", "Peleg", "Agam", "Noa", "Yardena", "Galit", "Amit", "Imit", 
+  "Judit", "Ewa", "Juwal",
+
+  "Albika", "Albina", "Amina", "Asma", "Aybika", "Ayna", "Ayza", "Aza", "Azni", 
+  "Batta", "Belita", "Busana", "Chovka", "Dagmara", "Elbika", "Elina", "Elmira", 
+  "Esila", "Kamila", "Kamisa", "Karina", "Kesira", "Khaza", "Kusama", "Lamara", 
+  "Larisa", "Marina", "Marisa", "Maryam", "Milana", "Nurbika", "Roza", "Selina", 
+  "Sovbika", "Taisa", "Tamara", "Tamila", "Tumisha", "Valida", "Yakha", "Yahita", 
+  "Yisa", "Yisiyta", "Zalina", "Zama", "Zamira", "Zara", "Zarema", "Zargana", 
+  "Zarina", "Zarita", "Zulikha", "Balarika", "Balikina", "Brunna", "Elamina", 
+  "Katania", "Zargona", "Tarni", "Katalin"
+]
+  list.push(randomizeFromArray(dwarvenFeminineFirstNames) + " " + pickFromList(dwarvenLastNames))
   return {
     type: "pickerRoller",
     list
