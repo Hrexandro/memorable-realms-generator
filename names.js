@@ -209,6 +209,7 @@ export const maleSlavicNames = {
     "Bożebor",
     "Bożeciech",
     "Bożydar",
+    "Bożur",
     "Bożysław",
     "Bracsław",
     "Branibor",
@@ -1228,6 +1229,7 @@ export const maleSlavicNames = {
 "Błażej",
 "Bogdan",
 "Bogumił",
+"Bławatek",
 "Bogusław",
 "Bogusz",
 "Bohdan",
@@ -1499,7 +1501,16 @@ export const maleSlavicNames = {
 
 export const femaleSwardonianNames = {
   type: "picker",
-  list: [  "Ada",
+  list: [  
+    "Rzepicha",
+    "Samboja",
+    "Mojmira",
+    "Miłka",
+    "Nieradka",
+    "Nierada",
+    "Drogomira",
+    "Nawoja",
+    "Ada",
   "Adela",
   "Adelajda",
   "Adriana",
@@ -3238,7 +3249,7 @@ export const masculineElfNames = {
     "Thingol",
 
     //pl nature
-
+    "Bławatek",
     "Hiacynt",
     "Chryzant",
     "Narcyz",
