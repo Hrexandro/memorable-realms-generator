@@ -24,6 +24,7 @@ import {
   dwarvenMFeminineNames,
   wildClanNames,
   tavernNames,
+  sarentineTownNames
 } from "./names.js";
 
 const generateButton = document.getElementById("generate-button");
@@ -58,19 +59,27 @@ function updateSecondaryPicked() {
 }
 
 function updateSecondarySelectStatus() {
+  function addOption(displayedName, valueIfDifferent) {
+    let option = document.createElement("option");
+    option.text = displayedName;
+    option.value = displayedName;
+    secondaryPicker.appendChild(option);
+  }
+
+  selectColumn.appendChild(secondaryPicker);
+  secondaryPicker.classList.add("input");
+  
+
+  secondaryPicker.addEventListener("click", () => {
+    updateSecondaryPicked();
+  });
+  secondaryPicker.addEventListener("change", () => {
+    updateSecondaryPicked();
+    removeAllChildren(nameDisplay);
+  });
+  secondaryPicker.classList.add("form-select");
+
   if (categoryPicker.value === "generatedName") {
-    function addOption(displayedName, valueIfDifferent) {
-      let option = document.createElement("option");
-      option.text = displayedName;
-      option.value = displayedName;
-      secondaryPicker.appendChild(option);
-    }
-
-    selectColumn.appendChild(secondaryPicker);
-    secondaryPicker.classList.add("input");
-    
-    secondaryPicker.classList.add("form-select");
-
     if (!secondaryPicker.firstChild){//if no options have been added to the picker
       addOption("Losowe");
       namesAndCategories.forEach((n)=>{ 
@@ -79,15 +88,15 @@ function updateSecondarySelectStatus() {
         }
       })
     }
+  } else if (categoryPicker.value === "townNames"){
+    if (!secondaryPicker.firstChild){//if no options have been added to the picker
+      townNameCategories.forEach((n)=>{ 
+        if (n.name){
+          addOption(n.name)
+        }
+      })
+    }
 
-    // addOption("Orcze");
-    secondaryPicker.addEventListener("click", () => {
-      updateSecondaryPicked();
-    });
-    secondaryPicker.addEventListener("change", () => {
-      updateSecondaryPicked();
-      removeAllChildren(nameDisplay);
-    });
   } else {
     removeAllChildren(secondaryPicker);
     secondaryPicker.remove();
@@ -190,29 +199,33 @@ let namesAndCategories = [//add names here
   {list: maleLatinNames},
   {list: maleRussianNames},
   {list: maleGaelicNames},
-
-
-
-
-
-
 ]
 
-function createName(){
-  let chosenNameType = namesAndCategories.find((element)=>{
+let townNameCategories = [
+  {list: sarentineTownNames, name: "Sarentyńskie"}
+]
+
+function createName(nameCategory){
+  let chosenNameType = nameCategory.find((element)=>{
     return element.name == secondaryPicked
   })
 
-  return pickFromList(chosenNameType ? chosenNameType.list : randomizeFromArray(namesAndCategories).list)
+  return pickFromList(chosenNameType ? chosenNameType.list : randomizeFromArray(nameCategory).list)
 }
 
 const generatedName = function () {
   return {
     type: "pickerRoller",
-    list: [createName()],
+    list: [createName(namesAndCategories)],
   };
 };
 
+const townNames = function (){
+  return {
+    type: "pickerRoller",
+    list: [createName(townNameCategories)],
+  };
+}
 const Goal = function (){
   // cele postaci cele drużyny motywacja motivations motywacje
   return{
@@ -675,30 +688,7 @@ const medievalProfessions = {
   ],
 };
 
-const townNames = {
-  type: "mixerConcatenated",
-  prefix: [  "Agi", "Alea", "Alex", "Amphi", "Andro", "Anthi", "Antio", "Archa", "Ari", "Astra", 
-  "Basil", "Byza", "Chalci", "Chryso", "Cleo", "Cor", "Cyclo", "Deme", "Diag", "Doro", 
-  "Eleu", "Epi", "Etho", "Eryth", "Gal", "Gorgo", "Heli", "Her", "Hier", "Hipp", 
-  "Ithaca", "Ioni", "Iska", "Kall", "Kara", "Kata", "Koro", "Laco", "Lami", "Leto", 
-  "Lysi", "Magni", "Mega", "Melano", "Metri", "Myce", "Myro", "Neme", "Neo", "Nik", 
-  "Oeno", "Olym", "Orphe", "Pale", "Pan", "Pano", "Pelas", "Pente", "Perga", "Pho", 
-  "Pira", "Plato", "Poly", "Pria", "Prota", "Rhe", "Samos", "Selen", "Sino", "Skopi", 
-  "Smyr", "Spor", "Steli", "Syra", "Tele", "Thero", "Thermi", "Thes", "Thrace", "Trimo", 
-  "Tymp", "Xantho", "Xer", "Zante", "Zar", "Zephy", "Zeno", "Zora", "Acri", "Arc", 
-  "Aris", "Athe", "Castro", "Delphi", "Egi", "Orest", "Sparti", "Tyr"],
-  suffix: [  "polis", "thos", "nos", "tos", "leos", "menos", "thon", "ros", "nia", "thon",
-  "essa", "ri", "dos", "peia", "neia", "phos", "thys", "idas", "thia", "neia", 
-  "thra", "on", "tas", "ios", "sia", "kia", "dis", "thon", "neus", "ron", "trix", 
-  "xa", "ra", "tos", "pyla", "dra", "thra", "ris", "tes", "dor", "ros", "sta", 
-  "cus", "lis", "mis", "xis", "gen", "tris", "phia", "ides", "ra", "menos", "tos", 
-  "phos", "nes", "mos", "ros", "lith", "bios", "los", "kia", "ta", "es", "nius", 
-  "ros", "dion", "thon", "peion", "ra", "tia", "pus", "ndros", "lyn", "kra", 
-  "phoros", "dora", "leion", "rix", "zios", "plis", "nathos", "moros", "rinth", 
-  "sos", "lon", "stos", "ron", "nyx", "phix", "cha", "phon", "theon", "teros", 
-  "dri", "prios", "tora", "dris", "don", "panos", "xys"]
 
-}
 
 generateButton.addEventListener("click", () => {
   updatePick();
