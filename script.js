@@ -48,7 +48,7 @@ function updatePick() {
 }
 
 let numberGenerated = 20;
-let category = "example";
+let category = "Goal";
 let secondaryPicked = null;
 
 const secondaryPicker = document.createElement("select");
@@ -70,13 +70,15 @@ function updateSecondarySelectStatus() {
     secondaryPicker.classList.add("input");
     
     secondaryPicker.classList.add("form-select");
-    
-    addOption("Losowe");
-    namesAndCategories.forEach((n)=>{ 
-      if (n.name){
-        addOption(n.name)
-      }
-    })
+
+    if (!secondaryPicker.firstChild){//if no options have been added to the picker
+      addOption("Losowe");
+      namesAndCategories.forEach((n)=>{ 
+        if (n.name){
+          addOption(n.name)
+        }
+      })
+    }
 
     // addOption("Orcze");
     secondaryPicker.addEventListener("click", () => {
