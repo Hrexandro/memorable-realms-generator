@@ -3036,7 +3036,7 @@ export const fantasticCreatures = {
     "Threl", "Thuloneah", "Tilutan", "Ulassa", "Vandacia", 
     "Vandy", "Voormish", "Votalp", "Xicarph", "Xorex", 
     "Yandro", "Ydheem", "Yhoundeh", "Zdim", "Zenobia", 
-    "Zokkar", "Zermish", "Zehbeh"
+    "Zokkar", "Zermish", "Zehbeh", "Lurulu"
   ]
 }
 export const humanoids = {
@@ -3154,8 +3154,10 @@ export const feminineElfNames = {
     "Klęża",
     "Dębina",
     "Pokrzywa",
-    "Paprotka"
+    "Paprotka",
     
+    "Lirazel",
+    "Ziroonderel"
   ]
 }
 
@@ -3163,7 +3165,7 @@ export const masculineElfNames = {
     type: "picker",
     list: [
     "Corellian",
-
+      "Orion",
     //lotr
     "Aegnor",
     "Amdír",
