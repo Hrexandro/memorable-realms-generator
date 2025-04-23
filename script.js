@@ -688,7 +688,68 @@ const medievalProfessions = {
   ],
 };
 
+//DCCBeastmen
 
+const DCCBeastmen = function () {
+  let list = []
+  let beastmanType = [
+    "Gęste, szorstkie futro oraz głowa niedźwiedzia",
+    "Gęste, szorstkie futro oraz głowa barana",
+    "Gęste, szorstkie futro oraz głowa szczura",
+    "Gęste, szorstkie futro oraz głowa małpy",
+    "Gęste, szorstkie futro oraz głowa tygrysa",
+    "Gęste, szorstkie futro oraz głowa wilka",
+    "Zgarbione, pokryte futrem plecy z drugą, pomniejszoną głową",
+    "Gęste upierzenie oraz głowa sępa",
+    "Muskularny",
+    "Gęste upierzenie oraz głowa kruka",
+    "Gęste upierzenie oraz głowa sowy",
+
+    "Cofnięte wargi odsłaniające kły niczym szable oraz szczelinowe źrenice kota",
+    "Plamista, wilgotna skóra oraz głowa żaby",
+    "Plamista, wilgotna skóra oraz głowa ośmiornicy",
+    "Plamista, wilgotna skóra oraz głowa węgorza",
+    "Plamista, wilgotna skóra oraz głowa salamandry",
+    "Zakręcone rogi barana oraz bulwiaste, przerośnięte oczy",
+    "Przerośnięte, zwisające policzki, z których kapie czarna posoka, oraz drobne oczka",
+    "Opalizujące łuski oraz głowa węża",
+    "Opalizujące łuski oraz głowa jaszczurki",
+    "Twarz pozbawiona szczęki, z rozchlapaną, wilgotną masą w miejscu ust i nosa",
+    "Ciało, z którego paszczy, uszu i oczu sączą się larwy, czerwie i muchy",
+    "Gruba, skórzasta skóra oraz głowa słonia",
+    "Gruba, skórzasta skóra oraz głowa byka",
+    "Gruba, skórzasta skóra oraz głowa konia",
+    "Gruba, skórzasta skóra oraz głowa nosorożca",
+    "Ciemna, błyszcząca skóra oraz głowa muchy",
+    "Ciemna, błyszcząca skóra oraz głowa pająka",
+    "Ciemna, błyszcząca skóra oraz głowa karalucha",
+    "Ciemna, błyszcząca skóra oraz głowa mrówki",
+
+  ]
+
+  let beastmanStats = "Init +1; AC 12; HD 1k8; hp: 3; ruch 30', Akc 1k20, Fort+1, Ref+1, Will-1; Chaotyczny; "
+
+  let beastmanWeapon = [
+    "Włócznia (1k6)",
+    "Długi nóż (1k6)",
+    "Szabla (1k6)",
+    "Toporek (1k6)",
+    "Buława (1k6)",
+    "Halabarda (1k6)",
+    "Pałka (1k6)",
+    "Miecz (1k6)",
+  ]
+
+  list.push(
+    randomizeFromArray(beastmanType) + `\n` + `\n` + beastmanStats + randomizeFromArray(beastmanWeapon)
+
+  )
+
+  return {
+    type: "pickerRoller",
+    list
+  };
+}
 
 generateButton.addEventListener("click", () => {
   updatePick();
