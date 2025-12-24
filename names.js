@@ -4732,8 +4732,89 @@ export const femaleSarentineNames = {
 ]
 }
 
+export const nordicMaleNames = function () {
+  let list = []
 
+  let last = ["Aberg","Brand","Carlson","Edman","Erling","Friberg","Helvig","Holmen","Junge","Kron",
+    "Lund","Nyland","Olander","Risberg","Sigmond","Toft","Trygg","Vang","Westberg","Westergard"]
 
+  let nick = ["Ogniooki",
+  "Zrodzony z Burzy",
+  "Orzeł",
+  "Żelaznokości",
+  "Zrodzony ze Słońca",
+  "Srogi",
+  "Wilcze Serce",
+  "Kamiennoręki",
+  "Pierworodny",
+  "Młot",
+  "Dalekobieg",
+  "Morski Diabeł",
+  "Szczęściarz",
+  "Dziecię Odyna",
+  "Łamiący Tarcze",
+  "Niedźwiedzie Serce",
+  "Wąż",
+  "Zrodzony z Nocy",
+  "Pogromca",
+  "Wybraniec"]
+
+  for (let incrementor = 0; incrementor < nordicMaleFirstNames.length; incrementor ++){
+    last.push(nordicMaleFirstNames[incrementor]+ "son" )
+  }
+
+  list.push(randomizeFromArray(nordicMaleFirstNames) + " " + randomizeFromArray(last) + " " + randomizeFromArray(nick) )
+
+return {
+  type: "pickerRoller",
+  list
+}
+}
+
+const nordicMaleFirstNames = ["Asger","Audun","Balder","Bjorn","Canute","Eirik","Elof","Frey","Gulbrand","Hagen",
+    "Haldor","Hjalmar","Ingolf","Ivar","Jerrik","Oluf","Rangvald","Sigurd","Torvald","Ulf"]
+
+export const nordicFemaleNames = function () {
+  let list = []
+
+  let first = [   "Alva","Astrid","Aslaug","Bodil","Brenna","Brunhilde","Dagny","Eira","Embla","Freja",
+    "Gunhilde","Helka","Inge","Jorunn","Ranga","Runa","Sigrid","Thyra","Toril","Ylva" ]
+
+  let last = ["Aberg","Brand","Carlson","Edman","Erling","Friberg","Helvig","Holmen","Junge","Kron",
+    "Lund","Nyland","Olander","Risberg","Sigmond","Toft","Trygg","Vang","Westberg","Westergard"]
+
+  let nick = [  "Ogniooka",
+    "Zrodzona z Burzy",
+    "Orlica",
+    "Żelaznokość",
+    "Zrodzona ze Słońca",
+    "Sroga",
+    "Wilcze Serce",
+    "Kamiennoręka",
+    "Pierworodna",
+    "Młot",
+    "Dalekobieg",
+    "Morski Diabeł",
+    "Szczęściara",
+    "Córa Odyna",
+    "Łamiąca Tarcze",
+    "Niedźwiedzie Serce",
+    "Żmija",
+    "Zrodzona z Nocy",
+    "Pogromczyni",
+    "Wybranka"]
+
+  for (let incrementor = 0; incrementor < first.length; incrementor ++){
+    last.push(nordicMaleFirstNames[incrementor]+ "dottir" )
+  }
+
+  list.push(randomizeFromArray(first) + " " + randomizeFromArray(last) + " " + randomizeFromArray(nick) )
+
+return {
+  type: "pickerRoller",
+  list
+}
+}
 
 
 export const humanMasculineNames = function (){
@@ -4742,6 +4823,8 @@ export const humanMasculineNames = function (){
   list.push(pickFromList(WHFMaleHumanNames))
   list.push(pickFromList(masculineTharkianNames))
   list.push(pickFromList(maleSarentineNames))
+  list.push(pickFromList(nordicMaleNames))
+  
   
   return {
     type: "pickerRoller",
@@ -4755,6 +4838,8 @@ export const humanFeminineNames = function (){
   list.push(pickFromList(femaleUlmiteNames))
   list.push(pickFromList(femaleSarentineNames))
   list.push(pickFromList(femaleSwardonianNames))
+  list.push(pickFromList(nordicFemaleNames))
+  
   return {
     type: "pickerRoller",
     list

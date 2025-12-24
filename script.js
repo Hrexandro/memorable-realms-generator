@@ -24,7 +24,9 @@ import {
   dwarvenMFeminineNames,
   wildClanNames,
   tavernNames,
-  sarentineTownNames
+  sarentineTownNames,
+  nordicMaleNames,
+  nordicFemaleNames
 } from "./names.js";
 
 const generateButton = document.getElementById("generate-button");
@@ -186,6 +188,10 @@ let namesAndCategories = [//add names here
   {list: dwarvenMFeminineNames, name: "Krasnoludzkie - żeńskie"},  
   {list: humanMasculineNames, name: "Ludzkie - męskie"},
   {list: humanFeminineNames, name: "Ludzkie - żeńskie"},
+  {list: nordicMaleNames, name: "Nordyckie - męskie"},
+  {list: nordicFemaleNames, name: "Nordyckie - żeńskie"},
+
+  
   {list: orkishNames, name: "Orcze"},
   {list: maleSarentineNames, name: "Sarentyńskie - męskie"},
   {list: femaleSarentineNames, name: "Sarentyńskie - żeńskie"},
