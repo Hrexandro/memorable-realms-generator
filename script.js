@@ -26,7 +26,8 @@ import {
   tavernNames,
   sarentineTownNames,
   nordicMaleNames,
-  nordicFemaleNames
+  nordicFemaleNames,
+  maleSwardonianWarriorNames
 } from "./names.js";
 
 const generateButton = document.getElementById("generate-button");
@@ -196,6 +197,7 @@ let namesAndCategories = [//add names here
   {list: maleSarentineNames, name: "Sarentyńskie - męskie"},
   {list: femaleSarentineNames, name: "Sarentyńskie - żeńskie"},
   {list: maleSlavicNames, name: "Swardońskie - męskie"},
+  {list: maleSwardonianWarriorNames, name: "Swardońskie - imiona wojaków"},
   {list: femaleSwardonianNames, name: "Swardońskie - żeńskie"},
   {list: masculineTharkianNames, name: "Tharkiańskie - męskie" },
   {list: feminineTharkianNames, name: "Tharkiańskie - żeńskie"},
