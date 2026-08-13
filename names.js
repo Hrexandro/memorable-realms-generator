@@ -31,8 +31,48 @@ function pickFromList(pickedList) {
 }
 ////////////////////////////////////////////////////////////////////////////////////copied instead of exporting
 
+export const deities = {
+  type: "picker",
+  list: [
+    "Święta Terragnis - praworządna - patronka praworządnych ludzi, rycerstwa, sprawiedliwości i prawości. Śmiertelna rycerka, która dostąpiła boskości",
+    "Madeera Przymierze - praworządna - uosobienie Ładu. Na jej skórze zapisane są prawa rządzące rzeczywistością, zwane Przymierzem",
+    "Solarus - praworządny - złoty bóg słońca i dnia. Jego posłańcami są świetliki",
+    "Niebiański Ojciec - praworządny",
+    "Matka Ziemia - praworządna",
+    "Salvia - praworządna - bogini zdrowia. Święte gaje i lecznicze stawy. Nienawidzi przemocy, do jej gaju nie wolno wejść z bronią.",
+    "Garncowy Iszek - praworządny - bóg pokoju, wytrwałości i cierpliwego znoszenia niedoli. Patron ubogich, cierpiących i prześladowanych",
+    "Elune - praworządna - elficka bogini księżyca",
+    "Draiborigal - praworządny - krasnoludzki bóg górnictwa",
+    "Gilder - praworządny - bóg monoteistycznej sekty krasnoludów",
 
+    "Gede - neutralna - bogini uczt, radości i dzikiej przyrody. Zwykle łagodna, lecz jej gniew objawia się gwałtownymi burzami",
+    "Ord - neutralny - bóg magii, wiedzy, tajemnic i równowagi. Nazywany Nieugiętym, Mądrym i Strażnikiem Tajemnic",
+    "Crom - neutralny - bóg wojny. Ceni odwagę. Wiernych poległych w bitwie zabiera do Walhalli. Po zwycięskich bitwach składa mu się ofiarę z łupów, w szczególności z broni",
+    "Wodan - neutralny - bóg wód, opiekun flisaków, rybaków i marynarzy. Ofiaruje mu się zwierzęta topiąc je w wodzie",
+    "Wojan - neutralny - bóg wojny",
+    "Karabog - neutralny - bóg wojny popularny wśród nomadów, jego symbolem jest czarny byk",
+    "Zielarz - neutralny - bóg roślin. Przedstawiany jako człowiek z liściem zamiast głowy. Jego wierni obcinają sobie koniuszek języka i seplenią. Cnotliwi trafią po śmierci na Pola Rdestu, grzesznicy do Donicy. Jego wierni karzą występnych przybijając ich do trójkątów",
+    "Caius - neutralny - bóg zwierząt i natury",
 
+    "Memnon - chaotyczny - pierwsze uosobienie Chaosu i bliźniak Madeery. Pragnie zniszczyć prawa Przymierza i uwolnić rzeczywistość od Ładu",
+    "Ramlaat - chaotyczny - Łupieżca, Barbarzyńca i Horda. Bóg podboju i siły, szczególnie czczony przez orków. Jego kult głosi, że nadchodzącą zagładę przetrwają tylko najsilniejsi",
+    "Shune Nikczemna - chaotyczna - bogini zakazanej magii i czarownictwa. Szepcze czarodziejom tajemnice i pragnie odebrać Ordowi władzę nad magią",
+    "Bobugbubilz - chaotyczny - demoniczny władca złych płazów. Pan żab, ropuch, bagien i plugawych stworzeń żyjących między lądem a wodą",
+    "Nimlurun - chaotyczny - Nieczysty, Pan Brudu, Skażenia i Chorób",
+    "Gurglak - chaotyczny - Pan Zgnilizny i Rozkładu",
+    "Shari-Him - chaotyczny - Dominator Światów",
+    "Krall-Dinok - chaotyczny - Wąż Życia i Śmierci",
+    "Królowa Nocy - chaotyczna",
+    "Terminus - chaotyczny - Ten, Który Niesie Kres Wszechrzeczy",
+
+  ]
+}
+
+const DEITIES = {
+  lawful: ["Święta Terragnis", "Madeera Przymierze", "Solarus", "Niebiański Ojciec", "Matka Ziemia", "Salvia", "Garncowy Iszek", "Elune"],
+  neutral: ["Gede", "Ord", "Crom", "Wodan", "Wojan", "Karabog", "Zielarz", "Caius"],
+  chaotic: ["Memnon", "Ramlaat", "Shune Nikczemna", "Bobugbubilz", "Nimlurun", "Gurglak", "Shari-Him", "Krall-Dinok", "Królowa Nocy", "Terminus"],
+};
 
 export const orkishNames = {
   type: "mixerConcatenated",

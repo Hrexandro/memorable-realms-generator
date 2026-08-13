@@ -27,7 +27,8 @@ import {
   sarentineTownNames,
   nordicMaleNames,
   nordicFemaleNames,
-  maleSwardonianWarriorNames
+  maleSwardonianWarriorNames,
+  deities
 } from "./names.js";
 
 const generateButton = document.getElementById("generate-button");
