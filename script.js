@@ -28,7 +28,7 @@ import {
   nordicMaleNames,
   nordicFemaleNames,
   maleSwardonianWarriorNames,
-  deities
+  deities,
 } from "./names.js";
 
 import {
@@ -629,12 +629,14 @@ let namesAndCategories = [//add names here
   {list: masculineElfNames, name: "Elfie - męskie"},
   {list: feminineElfNames, name: "Elfie - żeńskie"},
   {list: fantasticCreatures, name: "Fantastyczne Istoty (DCC)"},
+  {list: maleLatinNames, name: "Golgarańskie - męskie"},
   {list: humanoids, name: "Humanoidzi (DCC)"},
   {list: dwarvenMasculineNames, name: "Krasnoludzkie - męskie"},
   {list: dwarvenMFeminineNames, name: "Krasnoludzkie - żeńskie"},  
   {list: humanMasculineNames, name: "Ludzkie - męskie"},
   {list: humanFeminineNames, name: "Ludzkie - żeńskie"},
   {list: nordicMaleNames, name: "Nordyckie - męskie"},
+
   {list: nordicFemaleNames, name: "Nordyckie - żeńskie"},
 
   
@@ -649,7 +651,6 @@ let namesAndCategories = [//add names here
   {list: WHFMaleHumanNames, name: "Ulmickie - męskie"},
   {list: femaleUlmiteNames, name: "Ulmickie - żeńskie"},
   {list: warriorsAndThieves, name: "Wojownicy i Złodzieje (DCC)"},
-  {list: maleLatinNames},
   {list: maleRussianNames},
   {list: maleGaelicNames},
 ]
