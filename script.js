@@ -43,7 +43,16 @@ const numberPicker = document.getElementById("liczba");
 const formContainer = document.getElementById("form-container");
 const selectColumn = document.getElementById("select-column");
 
+pdfMake.fonts = {
+  ...(pdfMake.fonts || {}),
 
+  Roboto: {
+    normal: "Roboto-Regular.ttf",
+    bold: "Roboto-Medium.ttf",
+    italics: "Roboto-Italic.ttf",
+    bolditalics: "Roboto-MediumItalic.ttf"
+  },
+};
 
 categoryPicker.addEventListener("change", (e) => {
   removeAllChildren(nameDisplay);
