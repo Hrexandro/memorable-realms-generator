@@ -30,6 +30,50 @@ import {
   deities,
 } from "./names.js";
 
+
+function pickNameSource(source) {
+    if (Array.isArray(source)) {
+        return pick(source);
+    }
+
+    const resolved =
+        typeof source === "function"
+            ? source()
+            : source;
+
+    if (
+        resolved.type === "picker" ||
+        resolved.type === "pickerRoller"
+    ) {
+        return pick(resolved.list);
+    }
+
+    if (
+        resolved.type === "mixerSpaced" ||
+        resolved.type === "mixerConcatenated"
+    ) {
+        const separator =
+            resolved.type === "mixerSpaced"
+                ? " "
+                : "";
+
+        return Object.keys(resolved)
+            .filter(key => key !== "type")
+            .map(key => pick(resolved[key]))
+            .join(separator)
+            .trim();
+    }
+
+    throw new Error("Nieobsługiwane źródło imienia");
+}
+function generateAncestryName(ancestry) {
+    const sources = [
+        ancestry.names,
+        ...(ancestry.nameSources ?? [])
+    ];
+
+    return pickNameSource(pick(sources));
+}
 function createSluzospierdControls() {
     // Nie twórz drugi raz, jeśli już istnieje
     if (document.getElementById("sluzospierd-options")) return;
@@ -202,19 +246,31 @@ const ANCESTRIES = {
   human: {
     name: "Człowiek",
     names: [
-      "Zali", "Bram", "Clara", "Nattias", "Rina", "Denton", "Mirena", "Aran",
-      "Morgan", "Giralt", "Tamra", "Oscar", "Ishana", "Rogar", "Jasmin", "Tarin",
-      "Yuri", "Malchor", "Lienna", "Godfrey",
+        "Zali", "Bram", "Clara", "Nattias", "Rina", "Denton", "Mirena", "Aran",
+        "Morgan", "Giralt", "Tamra", "Oscar", "Ishana", "Rogar", "Jasmin", "Tarin",
+        "Yuri", "Malchor", "Lienna", "Godfrey",
     ],
+
+    nameSources: [
+        humanMasculineNames,
+        humanFeminineNames
+    ],
+
     languages: ["Wspólny"],
     feature: "Ambitny: na 1. poziomie wykonujesz jeden dodatkowy rzut na talent klasowy.",
   },
   elf: {
     name: "Elf",
+
     names: [
-      "Eliara", "Ryarn", "Sariel", "Tirolas", "Galira", "Varos", "Daeniel", "Axidor",
-      "Hiralia", "Cyrwin", "Lothiel", "Zaphiel", "Nayra", "Ithior", "Amriel", "Elyon",
-      "Jirwyn", "Natinel", "Fiora", "Ruhiel",
+        "Eliara", "Ryarn", "Sariel", "Tirolas", "Galira", "Varos", "Daeniel", "Axidor",
+        "Hiralia", "Cyrwin", "Lothiel", "Zaphiel", "Nayra", "Ithior", "Amriel", "Elyon",
+        "Jirwyn", "Natinel", "Fiora", "Ruhiel",
+    ],
+
+    nameSources: [
+        masculineElfNames,
+        feminineElfNames
     ],
     languages: ["Wspólny", "Elfi", "Leśny"],
     feature: "Dalekowzroczny: +1 do ataków dystansowych albo do testów rzucania czarów.",
@@ -222,9 +278,14 @@ const ANCESTRIES = {
   dwarf: {
     name: "Krasnolud",
     names: [
-      "Hilde", "Torbin", "Marga", "Bruno", "Karina", "Naugrim", "Brenna", "Darvin",
-      "Elga", "Alric", "Isolde", "Gendry", "Bruga", "Junnor", "Vidrid", "Torson",
-      "Brielle", "Ulfgar", "Sarna", "Grimm",
+        "Hilde", "Torbin", "Marga", "Bruno", "Karina", "Naugrim", "Brenna", "Darvin",
+        "Elga", "Alric", "Isolde", "Gendry", "Bruga", "Junnor", "Vidrid", "Torson",
+        "Brielle", "Ulfgar", "Sarna", "Grimm",
+    ],
+
+    nameSources: [
+        dwarvenMasculineNames,
+        dwarvenMFeminineNames
     ],
     languages: ["Wspólny", "Krasnoludzki"],
     feature: "Krzepki: zaczynasz z +2 HP, a kość HP na każdym poziomie rzucasz z przewagą.",
@@ -235,6 +296,11 @@ const ANCESTRIES = {
       "Willow", "Benny", "Annie", "Tucker", "Marie", "Hobb", "Cora", "Gordie",
       "Rose", "Ardo", "Alma", "Norbert", "Jennie", "Barvin", "Tilly", "Pike",
       "Lydia", "Marlow", "Astrid", "Jasper",
+    ],
+
+    nameSources: [
+        humanMasculineNames,
+        humanFeminineNames
     ],
     languages: ["Wspólny", "Niziołczy"],
     feature: "Skradający się: raz dziennie możesz stać się niewidzialny na 3 rundy.",
@@ -1919,7 +1985,7 @@ export function createSluzospierdCharacter(options = {}) {
     alignmentId,
     name: options.randomName === false
         ? "________________"
-        : pick(ancestry.names),
+        :  generateAncestryName(ancestry),
     background: (() => {
       const [name, description] = pick(BACKGROUNDS);
       return { name, description };

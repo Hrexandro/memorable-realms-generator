@@ -634,6 +634,8 @@ function pickFromList(pickedList) {
 }
 
 let namesAndCategories = [//add names here
+  
+  {list: wizardsAndClerics, name: "Czarodzieje (Pamiętliwe Krainy)"},
   {list: wizardsAndClerics, name: "Czarodzieje i Klerycy (DCC)"},
   {list: masculineElfNames, name: "Elfie - męskie"},
   {list: feminineElfNames, name: "Elfie - żeńskie"},
