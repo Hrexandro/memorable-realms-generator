@@ -123,18 +123,21 @@ const COMMON_LANGUAGES = [
   "Elfi",
   "Olbrzymi",
   "Gobliński",
-  "Merrański",
+  // "Merrański",
   "Orczy",
   "Gadzi",
   "Leśny",
   "Thaniański",
+  /////
+  "Niziołczy".
 ];
 
 const RARE_LANGUAGES = [
   "Niebiański",
-  "Diaboliczny",
+  "Piekielny",
   "Drakoński",
   "Pierwotny",
+  "Podwspólny"
 ];
 
 const BACKGROUNDS = [
@@ -210,7 +213,7 @@ const ANCESTRIES = {
       "Rose", "Ardo", "Alma", "Norbert", "Jennie", "Barvin", "Tilly", "Pike",
       "Lydia", "Marlow", "Astrid", "Jasper",
     ],
-    languages: ["Wspólny"],
+    languages: ["Wspólny", "Niziołczy"],
     feature: "Skradający się: raz dziennie możesz stać się niewidzialny na 3 rundy.",
   },
 };
