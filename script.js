@@ -29,6 +29,7 @@ import {
   nordicFemaleNames,
   maleSwardonianWarriorNames,
   deities,
+  femaleLatinNames
 } from "./names.js";
 
 import {
@@ -641,6 +642,7 @@ let namesAndCategories = [//add names here
   {list: feminineElfNames, name: "Elfie - żeńskie"},
   {list: fantasticCreatures, name: "Fantastyczne Istoty (DCC)"},
   {list: maleLatinNames, name: "Golgarańskie - męskie"},
+  {list: femaleLatinNames, name: "Golgarańskie - żeńskie"},
   {list: humanoids, name: "Humanoidzi (DCC)"},
   {list: dwarvenMasculineNames, name: "Krasnoludzkie - męskie"},
   {list: dwarvenMFeminineNames, name: "Krasnoludzkie - żeńskie"},  

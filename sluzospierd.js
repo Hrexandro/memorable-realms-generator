@@ -28,6 +28,7 @@ import {
   nordicFemaleNames,
   maleSwardonianWarriorNames,
   deities,
+  femaleLatinNames
 } from "./names.js";
 
 

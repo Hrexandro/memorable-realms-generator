@@ -3469,6 +3469,153 @@ export const feminineTharkianNames = {
   suffix: tharkianLastNames
 }
 
+export const femaleLatinNames = function () {
+  const nomina = [
+    "Acilia",
+    "Aebutia",
+    "Aelia",
+    "Aemilia",
+    "Afrania",
+    "Annia",
+    "Antistia",
+    "Antonia",
+    "Appuleia",
+    "Aquillia",
+    "Arruntia",
+    "Ateia",
+    "Atilia",
+    "Aurelia",
+    "Caecilia",
+    "Calpurnia",
+    "Cassia",
+    "Claudia",
+    "Clodia",
+    "Cloelia",
+    "Cluentia",
+    "Coelia",
+    "Cornelia",
+    "Curia",
+    "Decia",
+    "Domitia",
+    "Egnatia",
+    "Fabia",
+    "Fabricia",
+    "Fannia",
+    "Flavia",
+    "Fulvia",
+    "Furia",
+    "Gabinia",
+    "Galeria",
+    "Gellia",
+    "Herennia",
+    "Horatia",
+    "Hortensia",
+    "Hostilia",
+    "Julia",
+    "Junia",
+    "Laelia",
+    "Licinia",
+    "Livia",
+    "Lollia",
+    "Lucilia",
+    "Lucretia",
+    "Manlia",
+    "Marcia",
+    "Maria",
+    "Memmia",
+    "Minucia",
+    "Mucia",
+    "Naevia",
+    "Nonia",
+    "Octavia",
+    "Ovidia",
+    "Papiria",
+    "Petronia",
+    "Plautia",
+    "Pompeia",
+    "Pomponia",
+    "Porcia",
+    "Postumia",
+    "Quinctia",
+    "Sempronia",
+    "Sergia",
+    "Servilia",
+    "Sulpicia",
+    "Terentia",
+    "Tullia",
+    "Valeria",
+    "Vergilia",
+    "Vibia",
+    "Vinicia",
+    "Vitellia"
+  ];
+
+  const cognomina = [
+    "Albina",
+    "Antonina",
+    "Aquila",
+    "Avita",
+    "Balba",
+    "Barbata",
+    "Bassa",
+    "Caeca",
+    "Calva",
+    "Camilla",
+    "Canina",
+    "Clara",
+    "Clementina",
+    "Corvina",
+    "Crassa",
+    "Crispa",
+    "Drusilla",
+    "Fausta",
+    "Felix",
+    "Flavia",
+    "Flora",
+    "Fusca",
+    "Gemina",
+    "Hadriana",
+    "Laeta",
+    "Lepida",
+    "Longina",
+    "Lucilla",
+    "Marcella",
+    "Marcellina",
+    "Maxima",
+    "Messalina",
+    "Metella",
+    "Nigrina",
+    "Paulla",
+    "Prisca",
+    "Proba",
+    "Pulchra",
+    "Regilla",
+    "Rufina",
+    "Sabina",
+    "Saturnina",
+    "Severa",
+    "Silana",
+    "Tacita",
+    "Torquata",
+    "Traiana",
+    "Vera",
+    "Vespasiana"
+  ];
+
+  const nomen = randomizeFromArray(nomina);
+
+  const includeCognomen = Math.random() < 0.7;
+
+  const generatedName = includeCognomen
+    ? `${nomen} ${randomizeFromArray(cognomina)}`
+    : nomen;
+
+  return {
+    type: "pickerRoller",
+    list: [generatedName],
+  };
+};
+
 export const maleSarentineNames = {
   type: "picker",
   list: [
@@ -4850,22 +4997,6 @@ return {
 }
 }
 
-
-export const humanMasculineNames = function (){
-  let list = []
-  list.push(pickFromList(maleSlavicNames))
-  list.push(pickFromList(WHFMaleHumanNames))
-  list.push(pickFromList(masculineTharkianNames))
-  list.push(pickFromList(maleSarentineNames))
-  list.push(pickFromList(nordicMaleNames))
-  list.push(pickFromList(maleSwardonianWarriorNames))
-  list.push(pickFromList(maleLatinNames))
-  
-  return {
-    type: "pickerRoller",
-    list
-  }
-}
 export const wizardNames = {
   // czarodzieje magowie leki nazwy leków
   type: "picker",
@@ -5089,6 +5220,22 @@ export const wizardNames = {
 
   ],
 };
+
+export const humanMasculineNames = function (){
+  let list = []
+  list.push(pickFromList(maleSlavicNames))
+  list.push(pickFromList(WHFMaleHumanNames))
+  list.push(pickFromList(masculineTharkianNames))
+  list.push(pickFromList(maleSarentineNames))
+  list.push(pickFromList(nordicMaleNames))
+  list.push(pickFromList(maleSwardonianWarriorNames))
+  list.push(pickFromList(maleLatinNames))
+  
+  return {
+    type: "pickerRoller",
+    list
+  }
+}
 export const humanFeminineNames = function (){
   let list = []
   list.push(pickFromList(feminineTharkianNames))
@@ -5096,6 +5243,7 @@ export const humanFeminineNames = function (){
   list.push(pickFromList(femaleSarentineNames))
   list.push(pickFromList(femaleSwardonianNames))
   list.push(pickFromList(nordicFemaleNames))
+  list.push(pickFromList(femaleLatinNames))
   
   return {
     type: "pickerRoller",
