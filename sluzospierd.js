@@ -1,11 +1,34 @@
-/*
- * Generator postaci do Śluzospierda.
- *
- * Plik jest samowystarczalnym modułem ES i nie zależy od script.js.
- * Logika generatora jest oddzielona od interfejsu, dzięki czemu opcje
- * (np. klasa, pochodzenie, charakter) można później podpinać pod osobne
- * selecty, a wynik przekazywać do widoku lub generatora PDF.
- */
+import {
+  maleSlavicNames,
+  orkishNames,
+  maleLatinNames,
+  maleRussianNames,
+  maleGaelicNames,
+  WHFMaleHumanNames,
+  wizardsAndClerics,
+  warriorsAndThieves,
+  fantasticCreatures,
+  humanoids,
+  feminineElfNames,
+  masculineElfNames,
+  humanMasculineNames,
+  masculineTharkianNames,
+  feminineTharkianNames,
+  humanFeminineNames,
+  femaleUlmiteNames,
+  maleSarentineNames,
+  femaleSarentineNames,
+  femaleSwardonianNames,
+  dwarvenMasculineNames,
+  dwarvenMFeminineNames,
+  wildClanNames,
+  tavernNames,
+  sarentineTownNames,
+  nordicMaleNames,
+  nordicFemaleNames,
+  maleSwardonianWarriorNames,
+  deities,
+} from "./names.js";
 
 function createSluzospierdControls() {
     // Nie twórz drugi raz, jeśli już istnieje
@@ -129,7 +152,7 @@ const COMMON_LANGUAGES = [
   "Leśny",
   "Thaniański",
   /////
-  "Niziołczy".
+  "Niziołczy"
 ];
 
 const RARE_LANGUAGES = [

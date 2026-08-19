@@ -570,3 +570,50 @@ input.input:focus,
     min-width: 220px !important;
     max-width: 220px !important;
 }
+
+
+@media (max-width: 600px) {
+    #form-container .row {
+        --bs-gutter-x: 0.5rem;
+    }
+
+    /* Kategoria dostaje połowę szerokości */
+    #form-container .row > .col:nth-child(1) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Liczba */
+    #form-container .row > .col:nth-child(2) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    /* Generuj */
+    #form-container .row > .col:nth-child(3) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    #kategoria {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding-left: 0.6rem;
+        padding-right: 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    #liczba {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    #generate-button {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: 0.75rem;
+    }
+}
