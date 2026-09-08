@@ -5985,6 +5985,353 @@ export const sarentineTownNames = {
 
 }
 
+export const imperialTownNames = function () {
+
+  // Rdzenie bardziej "rdzennie imperialne" / łacińskie.
+  const latinStems = [
+    "Aquil",
+    "Aurel",
+    "Avern",
+    "Calen",
+    "Calpurn",
+    "Cass",
+    "Castr",
+    "Claud",
+    "Corvin",
+    "Cornel",
+    "Decian",
+    "Domit",
+    "Fabian",
+    "Falcon",
+    "Flav",
+    "Galer",
+    "Horat",
+    "Jul",
+    "Licin",
+    "Lucer",
+    "Lucian",
+    "Marcen",
+    "Marcian",
+    "Marian",
+    "Octav",
+    "Petron",
+    "Pompe",
+    "Porc",
+    "Quint",
+    "Sabin",
+    "Serg",
+    "Serv",
+    "Sever",
+    "Silvan",
+    "Terent",
+    "Tull",
+    "Valen",
+    "Valer",
+    "Varian",
+    "Vesp",
+    "Vitell",
+  ];
+
+  // Rdzenie miejscowe, które zostały zlatynizowane po włączeniu
+  // różnych ludów i krain do Imperium.
+  const provincialStems = [
+    "Abar",
+    "Adren",
+    "Alcar",
+    "Almar",
+    "Ardan",
+    "Arven",
+    "Balar",
+    "Belgar",
+    "Boran",
+    "Bracar",
+    "Brav",
+    "Calar",
+    "Caran",
+    "Cavar",
+    "Corven",
+    "Damar",
+    "Demer",
+    "Doran",
+    "Drav",
+    "Elar",
+    "Eran",
+    "Falcar",
+    "Ferren",
+    "Galen",
+    "Garven",
+    "Golar",
+    "Golgar",
+    "Gravar",
+    "Helvar",
+    "Ilar",
+    "Jovar",
+    "Kalar",
+    "Leran",
+    "Lorven",
+    "Malven",
+    "Meren",
+    "Narven",
+    "Nolar",
+    "Ordan",
+    "Orven",
+    "Palar",
+    "Ravan",
+    "Rogar",
+    "Saren",
+    "Salvar",
+    "Sorven",
+    "Talar",
+    "Teren",
+    "Torven",
+    "Varen",
+    "Velar",
+    "Veler",
+    "Veran",
+    "Voran",
+    "Zalar",
+  ];
+
+  const stems = [
+    ...latinStems,
+    ...provincialStems,
+  ];
+
+  // Końcówki nie mają być filologicznie idealne.
+  // Mają przede wszystkim dawać "imperialne fantasy".
+  const suffixes = [
+    "a",
+    "ara",
+    "aria",
+    "aris",
+    "as",
+    "ax",
+    "ea",
+    "ena",
+    "entia",
+    "eria",
+    "ia",
+    "iana",
+    "ianum",
+    "ica",
+    "icus",
+    "ina",
+    "inum",
+    "ion",
+    "ium",
+    "ona",
+    "ora",
+    "oria",
+    "orium",
+    "os",
+    "um",
+    "unum",
+    "us",
+  ];
+
+  // Nazwy dodane ręcznie, żeby generator nie brzmiał wyłącznie
+  // jak matematyczne sklejanie rdzenia i końcówki.
+  const standalone = [
+    "Aventia",
+    "Bellora",
+    "Calvaria",
+    "Castrona",
+    "Corventa",
+    "Demeria",
+    "Dravium",
+    "Falceria",
+    "Faventia",
+    "Florentia",
+    "Fortuna",
+    "Galoria",
+    "Helvarium",
+    "Luceria",
+    "Magnaria",
+    "Marentia",
+    "Noveria",
+    "Orventum",
+    "Ravena",
+    "Salentia",
+    "Seravia",
+    "Silvarium",
+    "Terenia",
+    "Valentia",
+    "Valeria",
+    "Varentum",
+    "Veleria",
+    "Verentia",
+    "Vorania",
+  ];
+
+  // Nazwy dla miejsc, które powstały jako kolonie.
+  const coloniaNames = [
+    "Alba",
+    "Aurelia",
+    "Bellona",
+    "Concordia",
+    "Ferrata",
+    "Flavia",
+    "Fortis",
+    "Luceria",
+    "Magna",
+    "Marcia",
+    "Nova",
+    "Rubra",
+    "Sabina",
+    "Solaris",
+    "Valeria",
+    "Victrix",
+  ];
+
+  // Warowne osady i dawne obozy wojskowe.
+  const castraNames = [
+    "Aquila",
+    "Aurelia",
+    "Corvina",
+    "Ferrata",
+    "Fortia",
+    "Magna",
+    "Montana",
+    "Nova",
+    "Rubra",
+    "Severa",
+    "Solaris",
+    "Valeria",
+    "Veteris",
+    "Victrix",
+  ];
+
+  // Porty.
+  const portusNames = [
+    "Aquilae",
+    "Aurelii",
+    "Corvi",
+    "Draconis",
+    "Ferratus",
+    "Luceri",
+    "Magnus",
+    "Marinus",
+    "Novus",
+    "Rubrus",
+    "Solaris",
+    "Valerii",
+    "Victoriae",
+  ];
+
+  // Miejscowości przy źródłach, termach, rzekach.
+  const aquaeNames = [
+    "Albae",
+    "Aureliae",
+    "Calidae",
+    "Clarae",
+    "Ferratae",
+    "Flaviae",
+    "Lucidae",
+    "Magnae",
+    "Nigrae",
+    "Rubrae",
+    "Sacrae",
+    "Valeriae",
+  ];
+
+  // Osady handlowe / administracyjne.
+  const forumNames = [
+    "Aquilae",
+    "Aurelii",
+    "Bellonae",
+    "Corvini",
+    "Ferrati",
+    "Luceri",
+    "Marci",
+    "Solaris",
+    "Valerii",
+    "Victoriae",
+  ];
+
+  // Mniejsze osady.
+  const vicusNames = [
+    "Albus",
+    "Aurelius",
+    "Corvinus",
+    "Ferratus",
+    "Montanus",
+    "Novus",
+    "Rubrus",
+    "Silvanus",
+    "Solaris",
+    "Valerianus",
+  ];
+
+
+  const roll = Math.floor(Math.random() * 100) + 1;
+
+  let generatedName;
+
+
+  // 70% — generowana nazwa jednosłowna.
+  if (roll <= 70) {
+
+    generatedName =
+      randomizeFromArray(stems) +
+      randomizeFromArray(suffixes);
+
+  }
+
+  // 12% — ręcznie przygotowana nazwa jednosłowna.
+  else if (roll <= 82) {
+
+    generatedName =
+      randomizeFromArray(standalone);
+
+  }
+
+  // 18% — nazwy typu Colonia, Castra, Portus itd.
+  else {
+
+    const typeRoll = Math.floor(Math.random() * 100) + 1;
+
+    if (typeRoll <= 25) {
+
+      generatedName =
+        `Colonia ${randomizeFromArray(coloniaNames)}`;
+
+    } else if (typeRoll <= 45) {
+
+      generatedName =
+        `Castra ${randomizeFromArray(castraNames)}`;
+
+    } else if (typeRoll <= 62) {
+
+      generatedName =
+        `Portus ${randomizeFromArray(portusNames)}`;
+
+    } else if (typeRoll <= 77) {
+
+      generatedName =
+        `Aquae ${randomizeFromArray(aquaeNames)}`;
+
+    } else if (typeRoll <= 90) {
+
+      generatedName =
+        `Forum ${randomizeFromArray(forumNames)}`;
+
+    } else {
+
+      generatedName =
+        `Vicus ${randomizeFromArray(vicusNames)}`;
+
+    }
+
+  }
+
+
+  return {
+    type: "pickerRoller",
+    list: [generatedName],
+  };
+
+};
+
 export const maleLatinNames = function () {
   const praenomina = [
     "Appius",
@@ -6330,6 +6677,8 @@ export const maleLatinNames = function () {
     list: [generatedName],
   };
 };
+
+
 
 // export const something = {
 //   type: "picker",

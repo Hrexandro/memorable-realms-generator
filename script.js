@@ -29,7 +29,8 @@ import {
   nordicFemaleNames,
   maleSwardonianWarriorNames,
   deities,
-  femaleLatinNames
+  femaleLatinNames,
+  imperialTownNames
 } from "./names.js";
 
 import {
@@ -669,7 +670,11 @@ let namesAndCategories = [//add names here
 ]
 
 let townNameCategories = [
-  {list: sarentineTownNames, name: "Sarentyńskie"}
+  {list: sarentineTownNames, name: "Sarentyńskie"},
+  {list: imperialTownNames, name: "Golgarańskie"},
+
+
+  
 ]
 
 function createName(nameCategory){
