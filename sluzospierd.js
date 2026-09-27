@@ -543,7 +543,7 @@ const CLASSES = {
       neutral: "Rabuś",
     },
     features: [
-      "Cios w plecy: trafiając nieświadomy celu, zadajesz dodatkową kość obrażeń broni; liczba dodatkowych kości rośnie o połowę poziomu, zaokrąglając w dół.",
+      "Cios w plecy: trafiając nieświadomy cel, zadajesz dodatkową kość obrażeń broni; liczba dodatkowych kości rośnie o połowę poziomu, zaokrąglając w dół.",
       "Złodziejstwo: masz przewagę we wspinaczce, skradaniu, ukrywaniu, przebieraniu się, wykrywaniu i rozbrajaniu pułapek, kradzieży kieszonkowej oraz otwieraniu zamków. Narzędzia złodziejskie nie zajmują slotów.",
     ],
   },
@@ -1500,22 +1500,64 @@ function chooseRandomClass() {
 }
 
 function applyStatIncrease(character, eligibleStats, amount = 2) {
-  const chosen = [];
+  const increases = {};
+  let remaining = amount;
 
-  if (amount === 2 && rollDie(2) === 2 && eligibleStats.length > 1) {
-    const twoStats = pickUnique(eligibleStats, 2);
-    twoStats.forEach((stat) => {
-      character.stats[stat] += 1;
-      chosen.push(`${STAT_LABELS[stat]} +1`);
-    });
-  } else {
-    const stat = pick(eligibleStats);
-    character.stats[stat] += amount;
-    chosen.push(`${STAT_LABELS[stat]} +${amount}`);
+  function increase(stat, points = 1) {
+    character.stats[stat] += points;
+    increases[stat] = (increases[stat] ?? 0) + points;
+    remaining -= points;
+  }
+
+  // Przy +2: 50% szans na rozdzielenie +1 / +1,
+  // jeśli są co najmniej dwie cechy poniżej 18.
+  if (amount === 2 && rollDie(2) === 2) {
+    const below18 = eligibleStats.filter(
+      stat => character.stats[stat] < 18
+    );
+
+    if (below18.length >= 2) {
+      const twoStats = pickUnique(below18, 2);
+
+      increase(twoStats[0]);
+      increase(twoStats[1]);
+    }
+  }
+
+  if (remaining > 0) {
+    // Najpierw próbujemy wrzucić całość w jedną cechę
+    // bez przekraczania 18.
+    const enoughRoom = eligibleStats.filter(
+      stat => character.stats[stat] + remaining <= 18
+    );
+
+    if (enoughRoom.length > 0) {
+      increase(pick(enoughRoom), remaining);
+    } else {
+      // Jeśli się nie da, rozdajemy punkt po punkcie.
+      // Najpierw cechom poniżej 18.
+      while (remaining > 0) {
+        const below18 = eligibleStats.filter(
+          stat => character.stats[stat] < 18
+        );
+
+        // Jeśli wszystko jest już na 18, pozwalamy przekroczyć 18.
+        const stat = pick(
+          below18.length > 0
+            ? below18
+            : eligibleStats
+        );
+
+        increase(stat);
+      }
+    }
   }
 
   refreshModifiers(character);
-  return chosen.join(" i ");
+
+  return Object.entries(increases)
+    .map(([stat, points]) => `${STAT_LABELS[stat]} +${points}`)
+    .join(" i ");
 }
 
 function chooseAnotherTalentOrStats(character, depth) {
@@ -1779,14 +1821,33 @@ function buildAttack(character) {
 
 function generateFirstLevelGear(character) {
   const classData = CLASSES[character.classId];
+
   character.weaponId = pick(classData.weapons);
   character.weapon = WEAPONS[character.weaponId];
+
   character.armorId = classData.wearsLeather ? "leather" : null;
   character.armor = character.armorId ? ARMORS[character.armorId] : null;
-  character.gold = 15;
+
+  character.gold = rollDice(2, 6) + 8;
+
   character.gear = [...CRAWLING_KIT];
+
   character.gear.push(character.weapon.name);
-  if (character.armor) character.gear.push(character.armor.name);
+
+  if (
+    character.weaponId === "shortbow" ||
+    character.weaponId === "longbow"
+  ) {
+    character.gear.push("Strzały (20)");
+  }
+
+  if (character.weaponId === "crossbow") {
+    character.gear.push("Bełty (20)");
+  }
+
+  if (character.armor) {
+    character.gear.push(character.armor.name);
+  }
 }
 
 function generateZeroLevelGear(character) {
@@ -1827,12 +1888,12 @@ function calculateGearSlots(character) {
   );
 
   return {
-      capacity,
-      used:
-          7 +
-          weaponSlots +
-          armorSlots +
-          magicItemSlots
+    capacity,
+    used:
+      character.gear.length +
+      Math.max(0, weaponSlots - 1) +
+      Math.max(0, armorSlots - 1) +
+      magicItemSlots
   };
 }
 
