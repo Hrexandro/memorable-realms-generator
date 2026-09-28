@@ -304,7 +304,7 @@ const ANCESTRIES = {
         humanFeminineNames
     ],
     languages: ["Wspólny", "Niziołczy"],
-    feature: "Skradający się: raz dziennie możesz stać się niewidzialny na 3 rundy.",
+    feature: "Skryty: raz dziennie możesz stać się niewidzialny na 3 rundy.",
   },
 };
 
@@ -714,7 +714,7 @@ const SPELL_DETAILS = {
         duration: "natychmiastowy",
         range: "nieodległy",
         description:
-            "Musisz okazać święty symbol. Wszystkie nieumarłe istoty w nieodległym zasięgu wykonują test CHA przeciwko wynikowi twojego testu rzucania czaru. Nieumarły, który poniesie porażkę, ucieka przed tobą przez 5 rund. Jeśli przegra test o co najmniej 10 i jego poziom nie jest wyższy od twojego, zostaje zamiast tego zniszczony."
+            "Wszystkie nieumarłe istoty w nieodległym zasięgu wykonują test CHA przeciwko wynikowi twojego testu rzucania czaru. Nieumarły, który poniesie porażkę, ucieka przed tobą przez 5 rund. Jeśli przegra test o co najmniej 10 i jego poziom nie jest wyższy od twojego, zostaje zamiast tego zniszczony."
     }
 };
 

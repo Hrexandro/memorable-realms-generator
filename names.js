@@ -53,6 +53,10 @@ export const deities = {
     "Karabog - neutralny - bóg wojny popularny wśród nomadów, jego symbolem jest czarny byk",
     "Zielarz - neutralny - bóg roślin. Przedstawiany jako człowiek z liściem zamiast głowy. Jego wierni obcinają sobie koniuszek języka i seplenią. Cnotliwi trafią po śmierci na Pola Rdestu, grzesznicy do Donicy. Jego wierni karzą występnych przybijając ich do trójkątów",
     "Caius - neutralny - bóg zwierząt i natury",
+    "Toliman - neutralny - bóg wiedzy i rzemiosła. Posiada zorganizowaną hierarchię kapłanów i wojowników",
+    "Nemed - neutralna - bogini wojny, strategii, walki i męstwa.",
+    "Shaula - neutralna - leśne bóstwo opiekuńcze elfów. Patronka lasów, elfów i ochrony.",
+    "Thabit - neutralna - tajemnicza bogini żalu i pamięci.",
 
     "Memnon - chaotyczny - pierwsze uosobienie Chaosu i bliźniak Madeery. Pragnie zniszczyć prawa Przymierza i uwolnić rzeczywistość od Ładu",
     "Ramlaat - chaotyczny - Łupieżca, Barbarzyńca i Horda. Bóg podboju i siły, szczególnie czczony przez orków. Jego kult głosi, że nadchodzącą zagładę przetrwają tylko najsilniejsi",
@@ -64,6 +68,9 @@ export const deities = {
     "Krall-Dinok - chaotyczny - Wąż Życia i Śmierci",
     "Królowa Nocy - chaotyczna",
     "Terminus - chaotyczny - Ten, Który Niesie Kres Wszechrzeczy",
+    "Kali - chaotyczna - mroczna bogini czczona przez odosobnione kulty w podziemiach.",
+    "Melkart - chaotyczny - pradawne i okrutne bóstwo podziemi, czczone przez zapomniane kulty."
+
 
   ]
 }
