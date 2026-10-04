@@ -44,6 +44,16 @@ export const deities = {
     "Elune - praworządna - elficka bogini księżyca",
     "Draiborigal - praworządny - krasnoludzki bóg górnictwa",
     "Gilder - praworządny - bóg monoteistycznej sekty krasnoludów",
+    "Toliman - praworządny - bóg wiedzy i rzemiosła. Posiada zorganizowaną hierarchię kapłanów i wojowników",
+    "Nemed - praworządny - bogini wojny, strategii, walki i męstwa.",
+    "Justicia - praworządna - bogini sprawiedliwości i miłosierdzia",
+    "Shul - praworządny - bóg księżyca",
+    "Klazath - praworządny - bóg wojny",
+    "Ulesh - praworządny - bóg pokoju",
+    "Choranus - praworządny - Ojciec Widzący, pan stworzenia",
+    "Daenthar - praworządny - Pan Gór, potężny bóg ziemi i przemysłu",
+    "Gorhan - praworządny - Zemsta w Hełmie, bóg męstwa i rycerskości",
+    "Aristemis - praworządna - Przenikliwa, półbogini jasnowidzenia i strategii",
 
     "Gede - neutralna - bogini uczt, radości i dzikiej przyrody. Zwykle łagodna, lecz jej gniew objawia się gwałtownymi burzami",
     "Ord - neutralny - bóg magii, wiedzy, tajemnic i równowagi. Nazywany Nieugiętym, Mądrym i Strażnikiem Tajemnic",
@@ -53,10 +63,12 @@ export const deities = {
     "Karabog - neutralny - bóg wojny popularny wśród nomadów, jego symbolem jest czarny byk",
     "Zielarz - neutralny - bóg roślin. Przedstawiany jako człowiek z liściem zamiast głowy. Jego wierni obcinają sobie koniuszek języka i seplenią. Cnotliwi trafią po śmierci na Pola Rdestu, grzesznicy do Donicy. Jego wierni karzą występnych przybijając ich do trójkątów",
     "Caius - neutralny - bóg zwierząt i natury",
-    "Toliman - neutralny - bóg wiedzy i rzemiosła. Posiada zorganizowaną hierarchię kapłanów i wojowników",
-    "Nemed - neutralna - bogini wojny, strategii, walki i męstwa.",
     "Shaula - neutralna - leśne bóstwo opiekuńcze elfów. Patronka lasów, elfów i ochrony.",
     "Thabit - neutralna - tajemnicza bogini żalu i pamięci.",
+    "Amun Tor - neutralny - bóg tajemnic i zagadek",
+    "Ildavir - neutralna - bogini natury",
+    "Pelagia - neutralna - bogini morza",
+    "Cthulhu - neutralny - kapłan Przedwiecznych",
 
     "Memnon - chaotyczny - pierwsze uosobienie Chaosu i bliźniak Madeery. Pragnie zniszczyć prawa Przymierza i uwolnić rzeczywistość od Ładu",
     "Ramlaat - chaotyczny - Łupieżca, Barbarzyńca i Horda. Bóg podboju i siły, szczególnie czczony przez orków. Jego kult głosi, że nadchodzącą zagładę przetrwają tylko najsilniejsi",
@@ -69,7 +81,12 @@ export const deities = {
     "Królowa Nocy - chaotyczna",
     "Terminus - chaotyczny - Ten, Który Niesie Kres Wszechrzeczy",
     "Kali - chaotyczna - mroczna bogini czczona przez odosobnione kulty w podziemiach.",
-    "Melkart - chaotyczny - pradawne i okrutne bóstwo podziemi, czczone przez zapomniane kulty."
+    "Melkart - chaotyczny - pradawne i okrutne bóstwo podziemi, czczone przez zapomniane kulty.",
+    "Ahriman - chaotyczny - bóg śmierci i chorób",
+    "Ukryty Pan - chaotyczny - bóg sekretów",
+    "Azi Dahaka - chaotyczny - demoniczny książę burz i pustkowi",
+    "Cadixat - chaotyczny - tytan Chaosu",
+    "Malotoch - chaotyczny - bóg padlinożernych kruków",
 
 
   ]
